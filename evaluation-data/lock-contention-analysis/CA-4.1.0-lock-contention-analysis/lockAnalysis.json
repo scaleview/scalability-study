@@ -1,0 +1,1478 @@
+{
+  "summary": {
+    "totalMethodsWithSynchronization": 65,
+    "numMethodsWithSynchronizedBody": 21,
+    "numMethodsWithSynchronizedBlock": 24,
+    "numMethodsWithLocks": 20,
+    "numMethodsWithDependencies": 65
+  },
+  "collisions": [
+    "[org.apache.cassandra.cql3.QueryProcessor.process#2#java.lang.String#org.apache.cassandra.db.ConsistencyLevel,org.apache.cassandra.cql3.statements.BatchStatement.execute#3#org.apache.cassandra.service.QueryState#org.apache.cassandra.cql3.BatchQueryOptions#long,org.apache.cassandra.cql3.statements.SelectStatement.execute#3#org.apache.cassandra.service.QueryState#org.apache.cassandra.cql3.QueryOptions#long,org.apache.cassandra.db.Mutation.apply#0,org.apache.cassandra.db.ReadCommand.executeLocally#1#org.apache.cassandra.db.ReadExecutionController,org.apache.cassandra.db.compaction.CompactionTask.runMayThrow#0,org.apache.cassandra.gms.GossipDigestSynVerbHandler.doVerb#1#org.apache.cassandra.net.Message,org.apache.cassandra.io.sstable.format.SSTableWriter.append#1#org.apache.cassandra.db.rows.UnfilteredRowIterator,org.apache.cassandra.repair.RepairJob.run#0,org.apache.cassandra.service.StorageProxy.getRangeSlice#3#org.apache.cassandra.db.PartitionRangeReadCommand#org.apache.cassandra.db.ConsistencyLevel#long,org.apache.cassandra.service.StorageService.initServer#1#int,org.apache.cassandra.transport.Dispatcher.processRequest#3#org.apache.cassandra.transport.ServerConnection#org.apache.cassandra.transport.Message$Request#org.apache.cassandra.transport.ClientResourceLimits$Overload,org.apache.cassandra.transport.messages.QueryMessage.execute#3#org.apache.cassandra.service.QueryState#long#boolean] collide at [org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap.677]",
+    "[org.apache.cassandra.locator.TokenMetadata.updateNormalTokens#1#com.google.common.collect.Multimap,org.apache.cassandra.service.StorageService.initServer#1#int] collide at [org.apache.cassandra.locator.TokenMetadata.updateNormalTokens.204]",
+    "[org.apache.cassandra.db.compaction.CompactionTask.runMayThrow#0,org.apache.cassandra.service.StorageService.initServer#1#int] collide at [org.apache.cassandra.db.lifecycle.LogTransaction$SSTableTidier.abort.421]",
+    "[org.apache.cassandra.cql3.statements.BatchStatement.execute#3#org.apache.cassandra.service.QueryState#org.apache.cassandra.cql3.BatchQueryOptions#long,org.apache.cassandra.db.Mutation.apply#0,org.apache.cassandra.db.ReadCommand.executeLocally#1#org.apache.cassandra.db.ReadExecutionController] collide at [org.apache.cassandra.io.sstable.KeyIterator.close.130]",
+    "[org.apache.cassandra.cql3.QueryProcessor.process#2#java.lang.String#org.apache.cassandra.db.ConsistencyLevel,org.apache.cassandra.cql3.statements.BatchStatement.execute#3#org.apache.cassandra.service.QueryState#org.apache.cassandra.cql3.BatchQueryOptions#long,org.apache.cassandra.cql3.statements.SelectStatement.execute#3#org.apache.cassandra.service.QueryState#org.apache.cassandra.cql3.QueryOptions#long,org.apache.cassandra.db.Mutation.apply#0,org.apache.cassandra.db.ReadCommand.executeLocally#1#org.apache.cassandra.db.ReadExecutionController,org.apache.cassandra.db.compaction.CompactionTask.runMayThrow#0,org.apache.cassandra.gms.GossipDigestSynVerbHandler.doVerb#1#org.apache.cassandra.net.Message,org.apache.cassandra.io.sstable.format.SSTableWriter.append#1#org.apache.cassandra.db.rows.UnfilteredRowIterator,org.apache.cassandra.repair.RepairJob.run#0,org.apache.cassandra.service.StorageProxy.getRangeSlice#3#org.apache.cassandra.db.PartitionRangeReadCommand#org.apache.cassandra.db.ConsistencyLevel#long,org.apache.cassandra.service.StorageService.initServer#1#int,org.apache.cassandra.transport.Dispatcher.processRequest#3#org.apache.cassandra.transport.ServerConnection#org.apache.cassandra.transport.Message$Request#org.apache.cassandra.transport.ClientResourceLimits$Overload,org.apache.cassandra.transport.messages.QueryMessage.execute#3#org.apache.cassandra.service.QueryState#long#boolean] collide at [org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap.701]"
+  ],
+  "methods": [
+    {
+      "name": "org.apache.cassandra.gms.Gossiper$GossipTask.run",
+      "declarationLineNumber": 293,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 300,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.updateNormalTokens",
+      "declarationLineNumber": 204,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 209,
+          "regionEnd": 245
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.io.sstable.KeyIterator.close",
+      "declarationLineNumber": 130,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 132,
+          "regionEnd": 139
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.compaction.CompactionStrategyManager.maybeGetScanners",
+      "declarationLineNumber": 852,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 856,
+          "regionEnd": 874
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.io.sstable.format.SSTableReader.cloneWithNewStart",
+      "declarationLineNumber": 918,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 920,
+          "regionEnd": 932
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.lifecycle.LogTransaction$SSTableTidier.abort",
+      "declarationLineNumber": 421,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 423,
+          "regionEnd": 426
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.io.sstable.format.SSTableReader.cloneWithRestoredStart",
+      "declarationLineNumber": 909,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 911,
+          "regionEnd": 914
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(keyspace,table)",
+        "linear(token,datacenter)",
+        "linear(table)",
+        "linear(node,datacenter)",
+        "linear(datacenter,table)",
+        "linear(keyspace,datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.io.sstable.KeyIterator.close",
+      "declarationLineNumber": 130,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 132,
+          "regionEnd": 139
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter)",
+        "linear(datacenter,table)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.StorageService.checkForEndpointCollision",
+      "declarationLineNumber": 685,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 685,
+          "regionEnd": 733
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.repair.consistent.LocalSessions.failSession",
+      "declarationLineNumber": 726,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 730,
+          "regionEnd": 742
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.repair.consistent.LocalSessions.setStateAndSave",
+      "declarationLineNumber": 694,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 696,
+          "regionEnd": 713
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.removeEndpoint",
+      "declarationLineNumber": 894,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 894,
+          "regionEnd": 901
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.setLocalHostId",
+      "declarationLineNumber": 1235,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 1235,
+          "regionEnd": 1240
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.lifecycle.LogTransaction$SSTableTidier.abort",
+      "declarationLineNumber": 421,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 423,
+          "regionEnd": 426
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.StorageService.initServer",
+      "declarationLineNumber": 783,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 783,
+          "regionEnd": 877
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.repair.consistent.RepairedState.add",
+      "declarationLineNumber": 203,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 203,
+          "regionEnd": 206
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.StorageService.prepareForReplacement",
+      "declarationLineNumber": 559,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 559,
+          "regionEnd": 654
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.StorageService.initServer",
+      "declarationLineNumber": 778,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 778,
+          "regionEnd": 781
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.schema.DefaultSchemaUpdateHandler.start",
+      "declarationLineNumber": 112,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 112,
+          "regionEnd": 120
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.updateNormalTokens",
+      "declarationLineNumber": 204,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 209,
+          "regionEnd": 245
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.commitlog.CommitLogSegment.close",
+      "declarationLineNumber": 525,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 525,
+          "regionEnd": 530
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.saveTruncationRecord",
+      "declarationLineNumber": 717,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 717,
+          "regionEnd": 723
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.StorageService.drain",
+      "declarationLineNumber": 5311,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 5311,
+          "regionEnd": 5465
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.repair.consistent.LocalSessions.stop",
+      "declarationLineNumber": 381,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 381,
+          "regionEnd": 387
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.schema.DefaultSchemaUpdateHandler.apply",
+      "declarationLineNumber": 227,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 227,
+          "regionEnd": 252
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.repair.consistent.LocalSessions.failOngoingRepairs",
+      "declarationLineNumber": 389,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 393,
+          "regionEnd": 405
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.commitlog.CommitLog.shutdownBlocking",
+      "declarationLineNumber": 451,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 451,
+          "regionEnd": 461
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.commitlog.CommitLogSegment.sync",
+      "declarationLineNumber": 318,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 318,
+          "regionEnd": 387
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.updateTokens",
+      "declarationLineNumber": 906,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 906,
+          "regionEnd": 917
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.getOrInitializeLocalHostId",
+      "declarationLineNumber": 1220,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 1220,
+          "regionEnd": 1230
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.getAvailableRanges",
+      "declarationLineNumber": 1614,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 1614,
+          "regionEnd": 1633
+        }
+      ],
+      "reportedComplexities": [
+        "linear(keyspace)",
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(node,keyspace,token,table)",
+        "linear(token,datacenter)",
+        "linear(row,table)",
+        "super-linear(node * token,datacenter * token)",
+        "linear(node,token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)",
+        "linear(row)",
+        "linear(keyspace,table)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter)",
+        "linear(datacenter,table)",
+        "linear(token)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.io.sstable.KeyIterator.close",
+      "declarationLineNumber": 130,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 132,
+          "regionEnd": 139
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.paxos.PaxosPrepare.permittedOrTerminateIfElectorateMismatch",
+      "declarationLineNumber": 482,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 482,
+          "regionEnd": 496
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.paxos.PaxosState.legacyPrepare",
+      "declarationLineNumber": 719,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 724,
+          "regionEnd": 755
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.paxos.PaxosState.maybeLoad",
+      "declarationLineNumber": 423,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 430,
+          "regionEnd": 438
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.paxos.PaxosState.legacyPropose",
+      "declarationLineNumber": 763,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 771,
+          "regionEnd": 799
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.service.paxos.PaxosPrepare.onResponse",
+      "declarationLineNumber": 441,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 441,
+          "regionEnd": 480
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.ColumnFamilyStore$PaxosRepairHistoryLoader.get",
+      "declarationLineNumber": 333,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 338,
+          "regionEnd": 345
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cachedOnlyTokenMap",
+      "declarationLineNumber": 701,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 708,
+          "regionEnd": 716
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+      "declarationLineNumber": 677,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 679,
+          "regionEnd": 690
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    },
+    {
+      "name": "org.apache.cassandra.db.SystemKeyspace.getTruncationRecord",
+      "declarationLineNumber": 766,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 766,
+          "regionEnd": 771
+        }
+      ],
+      "reportedComplexities": [
+        "linear(node,datacenter,table)",
+        "super-linear(datacenter * token)",
+        "linear(row)",
+        "linear(token,datacenter)",
+        "linear(node,datacenter)",
+        "linear(table)",
+        "linear(datacenter,table)",
+        "linear(node,token)",
+        "linear(token)",
+        "linear(keyspace,datacenter,table)",
+        "linear(node)"
+      ]
+    }
+  ]
+}

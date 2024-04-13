@@ -1,0 +1,4235 @@
+{
+  "summary": {
+    "totalMethodsWithSynchronization": 201,
+    "numMethodsWithSynchronizedBody": 102,
+    "numMethodsWithSynchronizedBlock": 107,
+    "numMethodsWithLocks": 64,
+    "numMethodsWithDependencies": 201
+  },
+  "collisions": [
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.handleHeartbeat#11#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration#org.apache.hadoop.hdfs.server.protocol.StorageReport[]#long#long#int#int#int#org.apache.hadoop.hdfs.server.protocol.VolumeFailureSummary#boolean#org.apache.hadoop.hdfs.server.protocol.SlowPeerReports#org.apache.hadoop.hdfs.server.protocol.SlowDiskReports,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration] collide at [org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.pruneStorageMap.521]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean] collide at [org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete.3099]",
+    "[org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processMisReplicatedBlock#1#org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add.287]",
+    "[org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processMisReplicatedBlock#1#org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add.77]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt.2468]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean] collide at [org.apache.hadoop.hdfs.server.namenode.FSNamesystem.removeBlocks.3141]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable] collide at [org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile.2726]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.hdfs.server.namenode.INodesInPath#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo#3#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename#2#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo.465]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo.338]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.hdfs.server.namenode.INodesInPath#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations#4#java.lang.String#java.lang.String#long#long,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo#3#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename#2#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction.476]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove.97]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete.51]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.remove.209]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.BlockManagerSafeMode.decrementSafeBlockCount.468]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.hdfs.server.namenode.INodesInPath#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations#4#java.lang.String#java.lang.String#long#long,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo#3#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename#2#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit.454]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.addFile.540]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update.442]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirectory.addINode.1112]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirectory.isNonEmptyDirectory.722]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo#3#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename#2#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo.3035]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add.63]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile.81]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.hdfs.server.namenode.INodesInPath#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations#4#java.lang.String#java.lang.String#long#long,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo#3#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.rename#2#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync.649]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication.127]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove.337]",
+    "[org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processMisReplicatedBlock#1#org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#org.apache.hadoop.hdfs.server.blockmanagement.BlockManager#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat#5#org.apache.hadoop.hdfs.server.namenode.FSDirectory#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String[]#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete#5#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete#3#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode#1#org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.delete#2#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.setReplication#2#java.lang.String#short,org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits#0] collide at [org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add.176]",
+    "[org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile#7#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#java.lang.String#org.apache.hadoop.hdfs.server.namenode.FSPermissionChecker#java.lang.String#java.lang.String#boolean#boolean,org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile#15#org.apache.hadoop.hdfs.server.namenode.FSNamesystem#org.apache.hadoop.hdfs.server.namenode.INodesInPath#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.fs.FileEncryptionInfo#org.apache.hadoop.hdfs.server.namenode.INode$BlocksMapUpdateInfo#boolean#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile#5#java.lang.String#java.lang.String#java.lang.String#java.util.EnumSet#boolean,org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile#12#java.lang.String#org.apache.hadoop.fs.permission.PermissionStatus#java.lang.String#java.lang.String#java.util.EnumSet#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String#boolean,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.append#3#java.lang.String#java.lang.String#org.apache.hadoop.io.EnumSetWritable,org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create#10#java.lang.String#org.apache.hadoop.fs.permission.FsPermission#java.lang.String#org.apache.hadoop.io.EnumSetWritable#boolean#short#long#org.apache.hadoop.crypto.CryptoProtocolVersion[]#java.lang.String#java.lang.String] collide at [org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo.357]"
+  ],
+  "methods": [
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication",
+      "declarationLineNumber": 127,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 132,
+          "regionEnd": 146
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.isNonEmptyDirectory",
+      "declarationLineNumber": 722,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 723,
+          "regionEnd": 733
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.handleHeartbeat",
+      "declarationLineNumber": 3962,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3970,
+          "regionEnd": 3992
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.updateStorage",
+      "declarationLineNumber": 981,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 982,
+          "regionEnd": 1022
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.getInvalidateBlocks",
+      "declarationLineNumber": 727,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 728,
+          "regionEnd": 732
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.updateHeartbeat",
+      "declarationLineNumber": 235,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 235,
+          "regionEnd": 243
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.injectStorage",
+      "declarationLineNumber": 494,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 495,
+          "regionEnd": 514
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.pruneStorageMap",
+      "declarationLineNumber": 521,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 522,
+          "regionEnd": 558
+        }
+      ],
+      "reportedComplexities": [
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirConcatOp.concat",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 75,
+          "regionEnd": 79
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(datanode)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(datanode)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(datanode)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo",
+      "declarationLineNumber": 465,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 483,
+          "regionEnd": 487
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch)",
+        "linear(datanode)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getBlockLocations",
+      "declarationLineNumber": 146,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 154,
+          "regionEnd": 191
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations",
+      "declarationLineNumber": 1965,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 1971,
+          "regionEnd": 2004
+        },
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2012,
+          "regionEnd": 2049
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.isNonEmptyDirectory",
+      "declarationLineNumber": 722,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 723,
+          "regionEnd": 733
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete",
+      "declarationLineNumber": 3099,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3105,
+          "regionEnd": 3117
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.removeBlocks",
+      "declarationLineNumber": 3141,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3145,
+          "regionEnd": 3151
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo",
+      "declarationLineNumber": 3035,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3041,
+          "regionEnd": 3050
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo",
+      "declarationLineNumber": 465,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 483,
+          "regionEnd": 487
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile",
+      "declarationLineNumber": 2726,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2743,
+          "regionEnd": 2753
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.remove",
+      "declarationLineNumber": 209,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 209,
+          "regionEnd": 221
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile",
+      "declarationLineNumber": 81,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 90,
+          "regionEnd": 149
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.addINode",
+      "declarationLineNumber": 1112,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 1116,
+          "regionEnd": 1120
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.addFile",
+      "declarationLineNumber": 540,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 549,
+          "regionEnd": 581
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.isNonEmptyDirectory",
+      "declarationLineNumber": 722,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 723,
+          "regionEnd": 733
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete",
+      "declarationLineNumber": 3099,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3105,
+          "regionEnd": 3117
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.removeBlocks",
+      "declarationLineNumber": 3141,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3145,
+          "regionEnd": 3151
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.remove",
+      "declarationLineNumber": 209,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 209,
+          "regionEnd": 221
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile",
+      "declarationLineNumber": 81,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 90,
+          "regionEnd": 149
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing",
+      "declarationLineNumber": 3883,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3890,
+          "regionEnd": 3898
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getListing",
+      "declarationLineNumber": 216,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 223,
+          "regionEnd": 282
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirAttrOp.setReplication",
+      "declarationLineNumber": 127,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 132,
+          "regionEnd": 146
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setReplication",
+      "declarationLineNumber": 2229,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2235,
+          "regionEnd": 2245
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "super-linear(datanode^2)",
+        "linear(datanode)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo",
+      "declarationLineNumber": 3035,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3041,
+          "regionEnd": 3050
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirRenameOp.renameTo",
+      "declarationLineNumber": 465,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 483,
+          "regionEnd": 487
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^3)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.appendFile",
+      "declarationLineNumber": 2726,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2743,
+          "regionEnd": 2753
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.remove",
+      "declarationLineNumber": 209,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 209,
+          "regionEnd": 221
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirAppendOp.appendFile",
+      "declarationLineNumber": 81,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 90,
+          "regionEnd": 149
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.removeBlocks",
+      "declarationLineNumber": 3141,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3145,
+          "regionEnd": 3151
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt",
+      "declarationLineNumber": 2468,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2509,
+          "regionEnd": 2568
+        },
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2558,
+          "regionEnd": 2571
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.addINode",
+      "declarationLineNumber": 1112,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 1116,
+          "regionEnd": 1120
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.addFile",
+      "declarationLineNumber": 540,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 549,
+          "regionEnd": 581
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.register",
+      "declarationLineNumber": 203,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 203,
+          "regionEnd": 211
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.Host2NodesMap.add",
+      "declarationLineNumber": 65,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 66,
+          "regionEnd": 90
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.registerDatanode",
+      "declarationLineNumber": 3932,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3933,
+          "regionEnd": 3937
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManagerSafeMode.decrementSafeBlockCount",
+      "declarationLineNumber": 468,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 468,
+          "regionEnd": 483
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.pruneStorageMap",
+      "declarationLineNumber": 521,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 522,
+          "regionEnd": 558
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 338,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 341,
+          "regionEnd": 353
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirDeleteOp.delete",
+      "declarationLineNumber": 51,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 59,
+          "regionEnd": 76
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.removeBlocks",
+      "declarationLineNumber": 3141,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 3145,
+          "regionEnd": 3151
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.PendingRecoveryBlocks.add",
+      "declarationLineNumber": 63,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 63,
+          "regionEnd": 84
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirStatAndListingOp.getFileInfo",
+      "declarationLineNumber": 357,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 359,
+          "regionEnd": 373
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt",
+      "declarationLineNumber": 2468,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2509,
+          "regionEnd": 2568
+        },
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 2558,
+          "regionEnd": 2571
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.addINode",
+      "declarationLineNumber": 1112,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 1116,
+          "regionEnd": 1120
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.addFile",
+      "declarationLineNumber": 540,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 549,
+          "regionEnd": 581
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader.loadFSEdits",
+      "declarationLineNumber": 167,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 173,
+          "regionEnd": 198
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.update",
+      "declarationLineNumber": 442,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 442,
+          "regionEnd": 473
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.remove",
+      "declarationLineNumber": 337,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 337,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+      "declarationLineNumber": 287,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 287,
+          "regionEnd": 302
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.ha.EditLogTailer.doTailEdits",
+      "declarationLineNumber": 294,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 299,
+          "regionEnd": 351
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync",
+      "declarationLineNumber": 649,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 655,
+          "regionEnd": 706
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 694,
+          "regionEnd": 696
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 715,
+          "regionEnd": 724
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 720,
+          "regionEnd": 722
+        },
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 736,
+          "regionEnd": 752
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.logEdit",
+      "declarationLineNumber": 454,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BLOCK",
+          "regionStart": 456,
+          "regionEnd": 468
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLog.doEditTransaction",
+      "declarationLineNumber": 476,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 476,
+          "regionEnd": 489
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.add",
+      "declarationLineNumber": 77,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 77,
+          "regionEnd": 89
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManagerSafeMode.decrementSafeBlockCount",
+      "declarationLineNumber": 468,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 468,
+          "regionEnd": 483
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.remove",
+      "declarationLineNumber": 209,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 209,
+          "regionEnd": 221
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader.loadEditRecords",
+      "declarationLineNumber": 210,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 220,
+          "regionEnd": 343
+        },
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 222,
+          "regionEnd": 344
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.InvalidateBlocks.add",
+      "declarationLineNumber": 176,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 176,
+          "regionEnd": 194
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.namenode.FSDirectory.addINode",
+      "declarationLineNumber": 1112,
+      "lockingRegions": [
+        {
+          "regionType": "EXPLICIT_LOCK",
+          "regionStart": 1116,
+          "regionEnd": 1120
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.ExcessRedundancyMap.remove",
+      "declarationLineNumber": 97,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 97,
+          "regionEnd": 113
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    },
+    {
+      "name": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManagerSafeMode.incrementSafeBlockCount",
+      "declarationLineNumber": 435,
+      "lockingRegions": [
+        {
+          "regionType": "SYNCHRONIZED_BODY",
+          "regionStart": 435,
+          "regionEnd": 459
+        }
+      ],
+      "reportedComplexities": [
+        "linear(databatch,datablock)",
+        "linear(databatch)",
+        "linear(databatch,datanode)",
+        "linear(datanode)",
+        "super-linear(datanode^2)",
+        "super-linear(datanode^3)",
+        "linear(datablock)"
+      ]
+    }
+  ]
+}
