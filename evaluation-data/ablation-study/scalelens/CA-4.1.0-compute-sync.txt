@@ -1,0 +1,26 @@
+|                                 dimensionalCodeFragment                                 |   pattern    |
++-----------------------------------------------------------------------------------------+--------------+
+| org.apache.cassandra.batchlog.BatchlogManager.setRate                                   | compute-sync |
+| org.apache.cassandra.db.SizeEstimatesRecorder.run                                       | compute-sync |
+| org.apache.cassandra.db.compaction.CompactionManager$BackgroundCompactionCandidate.run  | compute-sync |
+| org.apache.cassandra.db.compaction.CompactionStrategyManager.getEstimatedRemainingTasks | compute-sync |
+| org.apache.cassandra.db.compaction.CompactionStrategyManager.getNextBackgroundTask      | compute-sync |
+| org.apache.cassandra.gms.Gossiper$GossipTask.run                                        | compute-sync |
+| org.apache.cassandra.gms.Gossiper.addLocalApplicationStates                             | compute-sync |
+| org.apache.cassandra.gms.Gossiper.getGossipStatus                                       | compute-sync |
+| org.apache.cassandra.gms.Gossiper.getLiveMembers                                        | compute-sync |
+| org.apache.cassandra.gms.Gossiper.getMaxEndpointStateVersion                            | compute-sync |
+| org.apache.cassandra.gms.Gossiper.makeRandomGossipDigest                                | compute-sync |
+| org.apache.cassandra.gms.Gossiper.sendGossip                                            | compute-sync |
+| org.apache.cassandra.locator.AbstractReplicationStrategy.getAddressReplicas             | compute-sync |
+| org.apache.cassandra.locator.SimpleStrategy.calculateNaturalReplicas                    | compute-sync |
+| org.apache.cassandra.locator.TokenMetadata.addBootstrapTokens                           | compute-sync |
+| org.apache.cassandra.locator.TokenMetadata.calculatePendingRanges                       | compute-sync |
+| org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap                            | compute-sync |
+| org.apache.cassandra.locator.TokenMetadata.updateEndpointToHostIdMap                    | compute-sync |
+| org.apache.cassandra.locator.TokenMetadata.updateNormalTokens                           | compute-sync |
+| org.apache.cassandra.schema.CompactionParams.equals                                     | compute-sync |
+| org.apache.cassandra.service.StorageService.getLocalPrimaryRangeForEndpoint             | compute-sync |
+| org.apache.cassandra.service.StorageService.getPrimaryRangesForEndpoint                 | compute-sync |
+| org.apache.cassandra.service.StorageService.updateTokenMetadata                         | compute-sync |
+| org.apache.cassandra.utils.SortedBiMultiValMap.create                                   | compute-sync |

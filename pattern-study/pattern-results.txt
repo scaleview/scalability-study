@@ -1,0 +1,40 @@
+Total number of bugs: 369
+╔═══════════════════════════╗
+║ Section 2                 ║
+║ ---------                 ║
+║ Pattern compute Breakdown ║
+╚═══════════════════════════╝
+In total of 369 bugs, 155 (42.01%) are rc-compute
+total: 155 bugs -> 100.0%.
+compute-cross: 55 bugs -> 35.48%.
+compute-sync: 56 bugs -> 36.13%.
+compute-app: 44 bugs -> 28.39%.
+╔═══════════════════════════╗
+║ Section 2                 ║
+║ ---------                 ║
+║ Pattern unbound Breakdown ║
+╚═══════════════════════════╝
+In total of 369 bugs, 81 (21.95%) are rc-unbound
+tt: 81 bugs -> 100.0%.
+unbound-collection: 34 bugs -> 41.98%.
+unbound-allocation: 29 bugs -> 35.8%.
+unbound-os: 18 bugs -> 22.22%.
+╔═════════════════════════╗
+║ Section 2               ║
+║ ---------               ║
+║ Pattern bloat Breakdown ║
+╚═════════════════════════╝
+In total of 369 bugs, 31 (8.4%) are rc-bloat
+total: 31 bugs -> 100.0%.
+bloat-waste: 19 bugs -> 61.29%.
+bloat-opt: 12 bugs -> 38.71%.
+╔═════════════════════════╗
+║ Section 2               ║
+║ ---------               ║
+║ Pattern logic Breakdown ║
+╚═════════════════════════╝
+In total of 369 bugs, 102 (27.64%) are rc-logic
+total: 102 bugs -> 100.0%.
+logic-leak: 60 bugs -> 58.82%.
+logic-race: 17 bugs -> 16.67%.
+logic-corner: 25 bugs -> 24.51%.

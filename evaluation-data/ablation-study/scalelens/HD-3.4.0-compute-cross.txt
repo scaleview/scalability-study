@@ -1,0 +1,18 @@
+|                                     dimensionalCodeFragment                                      |    pattern    |
++--------------------------------------------------------------------------------------------------+---------------+
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo                       | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfosProto.writeTo                      | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo                       | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo     | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingProto.writeTo          | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto.writeTo                       | compute-cross |
+| org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageUuidsProto.writeTo                       | compute-cross |
+| org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolServerSideTranslatorPB.blockReceivedAndDeleted | compute-cross |
+| org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processAndHandleReportedBlock         | compute-cross |
+| org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processIncrementalBlockReport         | compute-cross |
+| org.apache.hadoop.hdfs.server.namenode.LeaseManager.checkLeases                                  | compute-cross |
+| org.apache.hadoop.io.ArrayWritable.write                                                         | compute-cross |
+| org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop                                           | compute-cross |
+| org.apache.hadoop.ipc.Server$Listener.doAccept                                                   | compute-cross |
+| org.apache.hadoop.ipc.Server$Listener.doRead                                                     | compute-cross |
+| org.apache.hadoop.ipc.Server$Listener.run                                                        | compute-cross |

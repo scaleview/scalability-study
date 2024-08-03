@@ -1,0 +1,16 @@
+|                           dimensionalCodeFragment                           |      pattern       |
++-----------------------------------------------------------------------------+--------------------+
+| org.apache.cassandra.config.CFMetaData.create                               | unbound-allocation |
+| org.apache.cassandra.cql3.QueryProcessor.makeInternalOptions                | unbound-allocation |
+| org.apache.cassandra.db.ColumnFamilyStore.snapshotWithoutFlush              | unbound-allocation |
+| org.apache.cassandra.db.SystemKeyspace.tokensAsSet                          | unbound-allocation |
+| org.apache.cassandra.db.compaction.CompactionManager.submitBackground       | unbound-allocation |
+| org.apache.cassandra.db.rows.BTreeRow$Builder$CellResolver.resolve          | unbound-allocation |
+| org.apache.cassandra.gms.GossipDigestSerializationHelper.deserialize        | unbound-allocation |
+| org.apache.cassandra.gms.GossipDigestSynVerbHandler.doSort                  | unbound-allocation |
+| org.apache.cassandra.locator.SimpleStrategy.calculateNaturalEndpoints       | unbound-allocation |
+| org.apache.cassandra.locator.TokenMetadata.calculatePendingRanges           | unbound-allocation |
+| org.apache.cassandra.schema.KeyspaceMetadata.existingIndexNames             | unbound-allocation |
+| org.apache.cassandra.serializers.SetSerializer.deserializeForNativeProtocol | unbound-allocation |
+| org.apache.cassandra.serializers.SetSerializer.serializeValues              | unbound-allocation |
+| org.apache.cassandra.service.StorageService.handleStateNormal               | unbound-allocation |

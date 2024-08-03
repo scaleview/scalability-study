@@ -1,0 +1,2245 @@
+[
+  {
+    "methodName": "org.apache.hadoop.hdfs.DFSUtilClient.compareBytes",
+    "lineNumber": 326,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(databatch)"
+      ],
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.readUnlock",
+    "lineNumber": 172,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7982,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.chooseStorage4Block",
+    "lineNumber": 771,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convertLocatedBlock",
+    "lineNumber": 1025,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.chooseStorageTypes",
+    "lineNumber": 144,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.hasStorageType",
+    "lineNumber": 1071,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 854,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.getSerializedSize",
+    "lineNumber": 19716,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7964,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.heartbeatCheck",
+    "lineNumber": 444,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.NetworkTopology.chooseRandom",
+    "lineNumber": 610,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.thirdparty.protobuf.CodedInputStream$ArrayDecoder.readRawVarint64SlowPath",
+    "lineNumber": 1120,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ],
+      "supra-linear": [
+        "log(datanode * file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addExpectedReplicasToPending",
+    "lineNumber": 1176,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.scheduleReconstruction",
+    "lineNumber": 2129,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add",
+    "lineNumber": 293,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.Host2NodesMap.getDatanodeByXferAddr",
+    "lineNumber": 188,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$ConnectionManager$1.run",
+    "lineNumber": 3845,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.rescanCachedBlockMap",
+    "lineNumber": 496,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.InnerNodeImpl.getLeaf",
+    "lineNumber": 269,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.io.ArrayWritable.write",
+    "lineNumber": 106,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.getRequiredStorageTypes",
+    "lineNumber": 397,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolServerSideTranslatorPB.blockReceivedAndDeleted",
+    "lineNumber": 229,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7991,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.isInitialized",
+    "lineNumber": 19607,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 812,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.INodeFile.assertAllBlocksComplete",
+    "lineNumber": 353,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7979,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processAndHandleReportedBlock",
+    "lineNumber": 4213,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7967,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.isGoodDatanode",
+    "lineNumber": 1021,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.LocatedBlock.convert",
+    "lineNumber": 135,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.addReplicaIfNotPresent",
+    "lineNumber": 293,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 865,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.setExpectedLocations",
+    "lineNumber": 88,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo",
+    "lineNumber": 19653,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 8003,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseSourceDatanodes",
+    "lineNumber": 2477,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.checkRedundancy",
+    "lineNumber": 4668,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.scheduleReconstruction",
+    "lineNumber": 2148,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.net.DFSNetworkTopology.chooseRandomWithStorageType",
+    "lineNumber": 224,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.getSerializedSize",
+    "lineNumber": 19682,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.InnerNodeImpl.getLeaf",
+    "lineNumber": 248,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.diff",
+    "lineNumber": 177,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processIncrementalBlockReport",
+    "lineNumber": 4336,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ],
+      "supra-linear": [
+        "log(datanode * file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.resetLastCachingDirectiveSentTime",
+    "lineNumber": 1929,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.INodeFile.storagespaceConsumedContiguous",
+    "lineNumber": 1057,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7973,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget",
+    "lineNumber": 278,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 833,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.setExpectedLocations",
+    "lineNumber": 80,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.LightWeightLinkedSet.addElem",
+    "lineNumber": 114,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.net.DFSNetworkTopology.chooseRandomWithStorageTypeTwoTrial",
+    "lineNumber": 122,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks.decrement",
+    "lineNumber": 109,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ],
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.chooseStorageTypes",
+    "lineNumber": 96,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.ReplicationWork.chooseTargets",
+    "lineNumber": 46,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.InnerNodeImpl.getLeaf",
+    "lineNumber": 273,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 846,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 8009,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.INodeFile.computeFileSize",
+    "lineNumber": 1002,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 807,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.heartbeatCheck",
+    "lineNumber": 473,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.thirdparty.protobuf.CodedOutputStream$ArrayEncoder.writeUInt32NoTag",
+    "lineNumber": 1268,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.NetworkTopology.chooseRandom",
+    "lineNumber": 601,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7985,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convert",
+    "lineNumber": 382,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.thirdparty.protobuf.AbstractMessageLite$Builder.addAllCheckingNulls",
+    "lineNumber": 353,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkBlocksComplete",
+    "lineNumber": 3204,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 829,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.GcTimeMonitor.calculateGCTimePercentageWithinObservedInterval",
+    "lineNumber": 181,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.net.InnerNodeImpl.getLeaf",
+    "lineNumber": 251,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor.pendingReconstructionCheck",
+    "lineNumber": 275,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ],
+      "supra-linear": [
+        "log(datanode * file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.DatanodeProtocolProtos$StorageReceivedDeletedBlocksProto.isInitialized",
+    "lineNumber": 24685,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget",
+    "lineNumber": 501,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.incrementBlocksScheduled",
+    "lineNumber": 305,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode",
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7988,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.validateReconstructionWork",
+    "lineNumber": 2259,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.chooseStorage4Block",
+    "lineNumber": 766,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toDatanodeInfos",
+    "lineNumber": 48,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.getSerializedSize",
+    "lineNumber": 19707,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7994,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.getStaleReplicas",
+    "lineNumber": 214,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo",
+    "lineNumber": 19637,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convertLocatedBlock",
+    "lineNumber": 1010,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 8006,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo",
+    "lineNumber": 19650,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.appendUCPartsConcise",
+    "lineNumber": 344,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom",
+    "lineNumber": 870,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toStorageIDs",
+    "lineNumber": 68,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7970,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toStorageTypes",
+    "lineNumber": 79,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.Host2NodesMap.contains",
+    "lineNumber": 50,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseSourceDatanodes",
+    "lineNumber": 2440,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7976,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.getExpectedStorageLocations",
+    "lineNumber": 108,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.heartbeatCheck",
+    "lineNumber": 468,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo",
+    "lineNumber": 7997,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo",
+    "lineNumber": 19656,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.INodeFile.storagespaceConsumedContiguous",
+    "lineNumber": 1055,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processIncrementalBlockReport",
+    "lineNumber": 4313,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.readUnlock",
+    "lineNumber": 182,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.LightWeightHashSet.resize",
+    "lineNumber": 471,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.writeUnlock",
+    "lineNumber": 319,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode * file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop",
+    "lineNumber": 1273,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode * file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.countNodes",
+    "lineNumber": 4364,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.LightWeightHashSet.resize",
+    "lineNumber": 473,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$BlockReportProcessingThread.processQueue",
+    "lineNumber": 5299,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.writeUnlock",
+    "lineNumber": 291,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode * file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$BlockReportProcessingThread.processQueue",
+    "lineNumber": 5313,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processIncrementalBlockReport",
+    "lineNumber": 4277,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datablock"
+      ],
+      "super-linear": [
+        "datanode * file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNodeUsage",
+    "lineNumber": 6621,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getDatanodeListForReport",
+    "lineNumber": 1509,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StorageInfoDefragmenter.scanAndCompactStorages",
+    "lineNumber": 4998,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getVolumeFailuresTotal",
+    "lineNumber": 5596,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getJournalTransactionInfo",
+    "lineNumber": 6699,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)",
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getNumLiveDataNodes",
+    "lineNumber": 1277,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StorageInfoDefragmenter.scanAndCompactStorages",
+    "lineNumber": 4997,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.reportDiffSorted",
+    "lineNumber": 3103,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)",
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNodeUsage",
+    "lineNumber": 6642,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getDatanodeListForReport",
+    "lineNumber": 1515,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.numBlocks",
+    "lineNumber": 369,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getLiveNodes",
+    "lineNumber": 6485,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNumDecomLiveDataNodes",
+    "lineNumber": 5570,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.fetchDatanodes",
+    "lineNumber": 1393,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.run",
+    "lineNumber": 200,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "supra-linear": [
+        "log(file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.LightWeightCache.evict",
+    "lineNumber": 155,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StorageInfoDefragmenter.scanAndCompactStorages",
+    "lineNumber": 5006,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNodeUsage",
+    "lineNumber": 6632,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.reportDiffSortedInner",
+    "lineNumber": 3156,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)",
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.reportDiffSorted",
+    "lineNumber": 3093,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)",
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem$FSNamesystemAuditLogger.logAuditEvent",
+    "lineNumber": 8614,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getEstimatedCapacityLostTotal",
+    "lineNumber": 5609,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getLiveNodes",
+    "lineNumber": 6448,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNumInMaintenanceLiveDataNodes",
+    "lineNumber": 8746,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.removeDecomNodeFromList",
+    "lineNumber": 1015,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.reportDiffSortedInner",
+    "lineNumber": 3154,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)",
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.run",
+    "lineNumber": 178,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "supra-linear": [
+        "log(file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNodeUsage",
+    "lineNumber": 6637,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.FoldedTreeSet$Node.getRightMostNode",
+    "lineNumber": 92,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.EnumCounters.sum",
+    "lineNumber": 123,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.GcTimeMonitor.calculateGCTimePercentageWithinObservedInterval",
+    "lineNumber": 203,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.LeaseManager.checkLeases",
+    "lineNumber": 565,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfosProto.isInitialized",
+    "lineNumber": 6509,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.LightWeightGSet.get",
+    "lineNumber": 132,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.FoldedTreeSet.add",
+    "lineNumber": 561,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)",
+        "log(file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageUuidsProto.getSerializedSize",
+    "lineNumber": 56297,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfosProto.getSerializedSize",
+    "lineNumber": 6534,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto.getSerializedSize",
+    "lineNumber": 16960,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convert",
+    "lineNumber": 422,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$ConnectionManager.closeIdle",
+    "lineNumber": 3804,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datablock)",
+        "log(datanode * file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto$Builder.addAllStorageTypes",
+    "lineNumber": 17316,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfosProto.writeTo",
+    "lineNumber": 6522,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.chooseLowRedundancyBlocks",
+    "lineNumber": 530,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.computeReconstructionWorkForBlocks",
+    "lineNumber": 2011,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convertStorageTypes",
+    "lineNumber": 514,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.NameNodeResourcePolicy.areResourcesAvailable",
+    "lineNumber": 56,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.computeReconstructionWorkForBlocks",
+    "lineNumber": 2025,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingBlockInfo.decrementReplicas",
+    "lineNumber": 231,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.GcTimeMonitor.calculateGCTimePercentageWithinObservedInterval",
+    "lineNumber": 196,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.LightWeightHashSet.computeCapacity",
+    "lineNumber": 450,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)",
+        "log(datanode * file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto.writeTo",
+    "lineNumber": 16946,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageUuidsProto.writeTo",
+    "lineNumber": 56283,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode * datablock)"
+      ],
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.chooseStorageTypes",
+    "lineNumber": 150,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode)",
+        "log(file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.GcTimeMonitor.calculateGCTimePercentageWithinObservedInterval",
+    "lineNumber": 206,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(datanode)"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo.findStorageInfo",
+    "lineNumber": 197,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.getBlockPlacementStatus",
+    "lineNumber": 4749,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.getPipeline",
+    "lineNumber": 1066,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.JvmPauseMonitor.getGcTimes",
+    "lineNumber": 152,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.isGoodDatanode",
+    "lineNumber": 1030,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ],
+      "linear": [
+        "file"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.getBlockPlacementStatus",
+    "lineNumber": 4771,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "super-linear": [
+        "datanode^2"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo",
+    "lineNumber": 49966,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convert",
+    "lineNumber": 2757,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.Diff.combinePosterior",
+    "lineNumber": 515,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convert",
+    "lineNumber": 2794,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.snapshot.SnapshotDiffListingInfo.addDirDiff",
+    "lineNumber": 102,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.snapshot.DirectoryWithSnapshotFeature$DirectoryDiff$2.initChildren",
+    "lineNumber": 210,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$Listener.doRead",
+    "lineNumber": 1440,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingProto.writeTo",
+    "lineNumber": 51661,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.LightWeightCache.evictExpiredEntries",
+    "lineNumber": 164,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo",
+    "lineNumber": 49969,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.Diff.apply2Previous",
+    "lineNumber": 428,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.util.Diff.combinePosterior",
+    "lineNumber": 518,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$Listener.run",
+    "lineNumber": 1335,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo",
+    "lineNumber": 49963,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$Listener.doAccept",
+    "lineNumber": 1397,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop",
+    "lineNumber": 1271,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingProto.getSerializedSize",
+    "lineNumber": 51686,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.snapshot.DirectoryWithSnapshotFeature.computeDiffBetweenSnapshots",
+    "lineNumber": 677,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo",
+    "lineNumber": 49972,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.ipc.Server$ConnectionManager.register",
+    "lineNumber": 3769,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingProto.isInitialized",
+    "lineNumber": 51633,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "linear": [
+        "datanode"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.DFSUtilClient.bytes2byteArray",
+    "lineNumber": 168,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.DFSUtilClient.bytes2byteArray",
+    "lineNumber": 153,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.window.RollingWindowManager.snapshot",
+    "lineNumber": 207,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.common.MetricsLoggerTask.run",
+    "lineNumber": 96,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.window.RollingWindowManager.snapshot",
+    "lineNumber": 210,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.getMetrics",
+    "lineNumber": 169,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.metrics2.impl.MBeanInfoBuilder.get",
+    "lineNumber": 104,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.common.MetricsLoggerTask.run",
+    "lineNumber": 101,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.metrics2.impl.MetricsSourceAdapter.updateAttrCache",
+    "lineNumber": 260,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.buildOpTotalCountMetricsInfo",
+    "lineNumber": 184,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.getMetrics",
+    "lineNumber": 171,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.common.MetricsLoggerTask.getFilteredAttributes",
+    "lineNumber": 136,
+    "dependencyType": "Loop",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics.buildOpRecordMetricsInfo",
+    "lineNumber": 189,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "bursty": [
+        "Burst(datanode, file)"
+      ]
+    }
+  },
+  {
+    "methodName": "org.apache.hadoop.util.ChunkedArrayList$1.hasNext",
+    "lineNumber": 118,
+    "dependencyType": "Cross",
+    "dimensionDescriptors": {
+      "supra-linear": [
+        "log(file)"
+      ]
+    }
+  }
+]

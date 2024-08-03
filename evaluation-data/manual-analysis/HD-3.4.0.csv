@@ -1,0 +1,74 @@
+DCF,Flagged,Dimensions,Complexity,Has reports in JIRA?,Report is Scalability?,Reports still OPEN?,Report,,compute-sync,compute-app,compute-cross,unbound-collection,unbound-allocation,unbound-os
+org.apache.hadoop.hdfs.protocol.LocatedBlock.convert,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-13601,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.chooseLowRedundancyBlocks,TRUE,datanode,superlinear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-10453,,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.namenode.INodeFile.computeFileSize,TRUE,"datanode, databatch",linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-17481,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processIncrementalBlockReport,TRUE,"datanode, file",superlinear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-14657,,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$LocatedBlockProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.getStaleReplicas,TRUE,datanode,linear,no,,,,,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingBlockInfo.decrementReplicas,TRUE,datanode,linear,no,,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.util.Diff.apply2Previous,TRUE,datanode,linear,yes,no,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.Host2NodesMap.contains,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.writeUnlock,TRUE,"datanode, databatch, datablock","superlinear, linear",yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16574,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.namenode.LeaseManager.checkLeases,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-15292,,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addExpectedReplicasToPending,TRUE,datanode,linear,no,,,,,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getNumLiveDataNodes,TRUE,datanode,linear,yes,yes,no,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convert,TRUE,datanode,linear,yes,yes,no,https://issues.apache.org/jira/browse/HDFS-12594,,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto$Builder.addAllStorageTypes,TRUE,datanode,linear,no,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor.pendingReconstructionCheck,TRUE,datanode,linear,no,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageTypesProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.namenode.snapshot.SnapshotDiffListingInfo.addDirDiff,TRUE,datanode,linear,no,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.validateReconstructionWork,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.setExpectedLocations,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.removeDecomNodeFromList,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo.findStorageInfo,TRUE,"datanode, datablock, file","linear, super-linear",yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16438,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toDatanodeInfos,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toStorageIDs,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processAndHandleReportedBlock,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-13671,,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.net.DFSNetworkTopology.chooseRandomWithStorageType,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.chooseSourceDatanodes,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.toStorageTypes,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16179,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingEntryProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.io.ArrayWritable.write,TRUE,"datanode, databatch",linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.net.NetworkTopology.chooseRandom,TRUE,"datanode, file",linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-11419,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.net.DFSNetworkTopology.chooseRandomWithStorageTypeTwoTrial,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convertStorageTypes,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.protocolPB.DatanodeProtocolServerSideTranslatorPB.blockReceivedAndDeleted,TRUE,datanode,linear,yes,no,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.appendUCPartsConcise,TRUE,datanode,linear,no,,,,,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.getPipeline,TRUE,"datanode, file","superlinear, linear",yes,no,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.namenode.NameNodeResourcePolicy.areResourcesAvailable,TRUE,datanode,linear,no,,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.ipc.Server$ConnectionManager.register,TRUE,datanode,linear,no,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.computeReconstructionWorkForBlocks,TRUE,"datanode, databatch, file","superlinear, linear",yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-17569,,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.getExpectedStorageLocations,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor.hasStorageType,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.HeartbeatManager.heartbeatCheck,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16574,,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.ipc.Server$Listener.run,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-17096,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.fetchDatanodes,TRUE,datanode,linear,yes,no,,,,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfosProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.countNodes,TRUE,"databatch, datablock, datanode","linear, super-linear",yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16070,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$StorageUuidsProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocolPB.PBHelperClient.convertLocatedBlock,TRUE,datanode,linear,yes,no,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.namenode.FSNamesystemLock.readUnlock,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16438,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.checkRedundancy,TRUE,datanode,linear,no,,,,,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.CacheReplicationMonitor.rescanCachedBlockMap,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-15273,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.chooseStorageTypes,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-15715,,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkBlocksComplete,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-16912,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.resetLastCachingDirectiveSentTime,TRUE,datanode,linear,no,,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.scheduleReconstruction,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-17564,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.BlockStoragePolicy.diff,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockUnderConstructionFeature.addReplicaIfNotPresent,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop,TRUE,"datanode, datablock, file","linear, super-linear",yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-15746,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$SnapshotDiffReportListingProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks.add,TRUE,datanode,linear,yes,yes,yes,https://issues.apache.org/jira/browse/HDFS-15981,,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.getBlockPlacementStatus,TRUE,datanode,superlinear,yes,no,,,,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager.getDatanodeListForReport,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-10285,,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.ipc.Server$Listener.doRead,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-13977,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo.incrementBlocksScheduled,TRUE,"datanode, file",linear,no,,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget,TRUE,datanode,linear,yes,no,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks.decrement,TRUE,datanode,linear,no,,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.DFSUtilClient.compareBytes,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.protocol.proto.HdfsProtos$DatanodeInfoProto.writeTo,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.namenode.INodeFile.assertAllBlocksComplete,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.Host2NodesMap.getDatanodeByXferAddr,TRUE,datanode,linear,yes,no,,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+org.apache.hadoop.ipc.Server$Listener.doAccept,TRUE,datanode,linear,no,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseRandom,TRUE,datanode,linear,yes,no,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StorageInfoDefragmenter.scanAndCompactStorages,TRUE,datanode,linear,yes,yes,,https://issues.apache.org/jira/browse/HDFS-14628,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE

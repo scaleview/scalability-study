@@ -1,0 +1,20 @@
+DCFs in CA-4.1.0: 59753
+compute-sync: 768
+compute-app: 2408
+compute-cross: 2624
+unbound-collection: 2689
+unbound-allocation: 966
+unbound-os: 0
+Totally: 9455
+Deduplicated: 7823
+Pattern statistics: {1: 6390, 2: 1242, 3: 183, 4: 8}
+DCFs in HD-3.4.0: 69814
+compute-sync: 5196
+compute-app: 1800
+compute-cross: 11439
+unbound-collection: 2055
+unbound-allocation: 659
+unbound-os: 0
+Totally: 21149
+Deduplicated: 16982
+Pattern statistics: {1: 13513, 2: 2857, 4: 76, 3: 531, 5: 5}
