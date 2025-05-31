@@ -1,0 +1,445 @@
+System,ID,Title,Tags,Link
+CASSANDRA,CASSANDRA-16261,[Prevent unbounded number of flushing tasks],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-16261
+CASSANDRA,CASSANDRA-16380,[KeyCache load performance issue during startup],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-16380
+CASSANDRA,CASSANDRA-16446,[Parent repair sessions leak may lead to node long pauses],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/CASSANDRA-16446
+CASSANDRA,CASSANDRA-16877,[High priority internode messages which exceed the large message threshold are dropped],"['sc-clus', 'rc-logic-corner']",https://issues.apache.org/jira/browse/CASSANDRA-16877
+CASSANDRA,CASSANDRA-16904,[Check if size of object being added to RowCache and KeyCache is bigger than cache capacity],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/CASSANDRA-16904
+CASSANDRA,CASSANDRA-17342,[Performance problem for node restart with incremental range repairs],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-17342
+CASSANDRA,CASSANDRA-17691,[Gossip/Decommission tasklock contention on large clusters],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-17691
+CASSANDRA,CASSANDRA-17787,[Full repair on a keyspace with a large amount of tables causes OOM],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-17787
+CASSANDRA,CASSANDRA-18546,[Remove unnecessary shuffling of GossipDigests in Gossiper#makeRandomGossipDigest],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-18546
+CASSANDRA,CASSANDRA-18773,[Compactions are slow],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-18773
+CASSANDRA,CASSANDRA-19107,[Revert unnecessary read lock acquisition when reading ring version in TokenMetadata introduced in CASSANDRA-16286],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-19107
+CASSANDRA,CASSANDRA-19336,[Repair causes out of memory],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-19336
+CASSANDRA,CASSANDRA-19412,[delete useless collection:backPressureHosts in the sendToHintedReplicas to improve write performance],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-19412
+CASSANDRA,CASSANDRA-19477,[Do not go to disk to get HintsStore.getTotalFileSize],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/CASSANDRA-19477
+CASSANDRA,CASSANDRA-19534,[Unbounded queues in native transport requests lead to node instability],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-19534
+CASSANDRA,CASSANDRA-13215,[Cassandra nodes startup time 20x more after upgarding to 3.x],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-13215
+CASSANDRA,CASSANDRA-13948,[Reload compaction strategies when JBOD disk boundary changes],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-13948
+CASSANDRA,CASSANDRA-9882,[DTCS (maybe other strategies) can block flushing when there are lots of sstables],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-9882
+CASSANDRA,CASSANDRA-16201,[Reduce amount of allocations during batch statement execution],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-16201
+CASSANDRA,CASSANDRA-15514,[Properly clean up DefaultSessionProvider#sessionCache when closing QueryReplayer],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/CASSANDRA-15514
+CASSANDRA,CASSANDRA-15400,[Cassandra 3.0.18 went OOM several hours after joining a cluster],"['sc-clus', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/CASSANDRA-15400
+CASSANDRA,CASSANDRA-15364,[Avoid over scanning data directories in LogFile.verify()],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-15364
+CASSANDRA,CASSANDRA-15141,[Faster token ownership calculation for NetworkTopologyStrategy],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-15141
+CASSANDRA,CASSANDRA-15013,[Prevent client requests from blocking on executor task queue],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-15013
+CASSANDRA,CASSANDRA-14855,"[Message Flusher scheduling fell off the event loop, resulting in out of memory]","['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-14855
+CASSANDRA,CASSANDRA-14840,[Bootstrap of new node fails with OOM in a large cluster],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-14840
+CASSANDRA,CASSANDRA-14834,[Avoid keeping StreamingTombstoneHistogramBuilder.Spool in memory during the whole compaction],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/CASSANDRA-14834
+CASSANDRA,CASSANDRA-14747,"[Evaluate 200 node, compression=none, encryption=none, coalescing=off]","['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-14747
+CASSANDRA,CASSANDRA-14660,[Improve TokenMetaData cache populating performance for large cluster],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-14660
+CASSANDRA,CASSANDRA-14239,[OutOfMemoryError when bootstrapping with less than 100GB RAM],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-14239
+CASSANDRA,CASSANDRA-14096,[Cassandra 3.11.1 Repair Causes Out of Memory],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-14096
+CASSANDRA,CASSANDRA-13993,[Add optional startup delay to wait until peers are ready],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/CASSANDRA-13993
+CASSANDRA,CASSANDRA-13923,[Flushers blocked due to many SSTables],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-13923
+CASSANDRA,CASSANDRA-13569,[Schedule schema pulls just once per endpoint],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-13569
+CASSANDRA,CASSANDRA-13299,[Potential OOMs and lock contention in write path streams],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-13299
+CASSANDRA,CASSANDRA-13065,[Skip building views during base table streams on range movements],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-13065
+CASSANDRA,CASSANDRA-12281,[Gossip blocks on startup when there are pending range movements],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-12281
+CASSANDRA,CASSANDRA-12245,[initial view build can be parallel],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-12245
+CASSANDRA,CASSANDRA-11748,[Schema version mismatch may lead to Casandra OOM at bootstrap during a rolling upgrade process],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-11748
+CASSANDRA,CASSANDRA-10654,[Make MV streaming rebuild parallel],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-10654
+CASSANDRA,CASSANDRA-9258,[Range movement causes CPU & performance impact],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-9258
+CASSANDRA,CASSANDRA-8550,[Internal pagination in CQL3 index queries creating substantial overhead],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-8550
+CASSANDRA,CASSANDRA-8457,[nio MessagingService],"['sc-clus', 'rc-unbound-os']",https://issues.apache.org/jira/browse/CASSANDRA-8457
+CASSANDRA,CASSANDRA-8329,[LeveledCompactionStrategy should split large files across data directories when compacting],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/CASSANDRA-8329
+CASSANDRA,CASSANDRA-8269,[Large number of system hints & other CF's cause heap to fill and run OOM],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-8269
+CASSANDRA,CASSANDRA-8028,[Unable to compute when histogram overflowed],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/CASSANDRA-8028
+CASSANDRA,CASSANDRA-7758,[Some gossip messages are very slow to process on vnode clusters],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-7758
+CASSANDRA,CASSANDRA-6569,[Batchlog replays copy the entire batchlog table into the heap],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-6569
+CASSANDRA,CASSANDRA-6496,[Endless L0 LCS compactions],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/CASSANDRA-6496
+CASSANDRA,CASSANDRA-6488,[Batchlog writes consume unnecessarily large amounts of CPU on vnodes clusters],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-6488
+CASSANDRA,CASSANDRA-6485,[NPE in calculateNaturalEndpoints],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/CASSANDRA-6485
+CASSANDRA,CASSANDRA-6409,[gossip performance improvement at node startup],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-6409
+CASSANDRA,CASSANDRA-6345,[Endpoint cache invalidation causes CPU spike (on vnode rings?)],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-6345
+CASSANDRA,CASSANDRA-6297,[Gossiper blocks when updating tokens and turns node down],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/CASSANDRA-6297
+CASSANDRA,CASSANDRA-6268,[Poor performance of Hadoop if any DC is using VNodes],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/CASSANDRA-6268
+CASSANDRA,CASSANDRA-6127,[vnodes don't scale to hundreds of nodes],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-6127
+CASSANDRA,CASSANDRA-5982,[OutOfMemoryError when writing text blobs to a very large number of tables],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/CASSANDRA-5982
+CASSANDRA,CASSANDRA-5719,[Expire entries out of ThriftSessionManager],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/CASSANDRA-5719
+CASSANDRA,CASSANDRA-5529,[thrift_max_message_length_in_mb makes long-lived connections error out],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/CASSANDRA-5529
+CASSANDRA,CASSANDRA-5506,[Reduce memory consumption of IndexSummary],"['sc-data', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/CASSANDRA-5506
+CASSANDRA,CASSANDRA-5456,[Large number of bootstrapping nodes cause gossip to stop working],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/CASSANDRA-5456
+CASSANDRA,CASSANDRA-5222,[OOM Exception during repair session with LeveledCompactionStrategy],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/CASSANDRA-5222
+CASSANDRA,CASSANDRA-5220,[Repair improvements when using vnodes],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-5220
+CASSANDRA,CASSANDRA-4316,[Compaction Throttle too bursty with large rows],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/CASSANDRA-4316
+CASSANDRA,CASSANDRA-4142,[OOM Exception during repair session with LeveledCompactionStrategy],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/CASSANDRA-4142
+CASSANDRA,CASSANDRA-3881,[reduce computational complexity of processing topology changes],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-3881
+CASSANDRA,CASSANDRA-3831,[scaling to large clusters in GossipStage impossible due to calculatePendingRanges ],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/CASSANDRA-3831
+MAPREDUCE,MAPREDUCE-7261,[Memory efficiency in speculator],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-7261
+MAPREDUCE,MAPREDUCE-7241,[FileInputFormat listStatus with less memory footprint],"['sc-load', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/MAPREDUCE-7241
+MAPREDUCE,MAPREDUCE-7185,[Parallelize part files move in FileOutputCommitter],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-7185
+MAPREDUCE,MAPREDUCE-7150,[Optimize collections used by MR JHS to reduce its memory],"['sc-clus', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/MAPREDUCE-7150
+MAPREDUCE,MAPREDUCE-7094,"[LocalDistributedCacheManager leaves classloaders open, which leaks FDs]","['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-7094
+MAPREDUCE,MAPREDUCE-7029,[FileOutputCommitter is slow on filesystems lacking recursive delete],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-7029
+MAPREDUCE,MAPREDUCE-6763,[Shuffle server listen queue is too small],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/MAPREDUCE-6763
+MAPREDUCE,MAPREDUCE-6724,[Single shuffle to memory must not exceed Integer#MAX_VALUE],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/MAPREDUCE-6724
+MAPREDUCE,MAPREDUCE-6689,[MapReduce job can infinitely increase number of reducer resource requests],"['sc-fail', 'rc-logic-race']",https://issues.apache.org/jira/browse/MAPREDUCE-6689
+MAPREDUCE,MAPREDUCE-6684,[High contention on scanning of user directory under immediate_done in Job History Server],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/MAPREDUCE-6684
+MAPREDUCE,MAPREDUCE-6628,[Potential memory leak in CryptoOutputStream],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-6628
+MAPREDUCE,MAPREDUCE-6622,[Add capability to set JHS job cache to a task-based limit],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/MAPREDUCE-6622
+MAPREDUCE,MAPREDUCE-6107,[Job history server becomes unresponsive due to stuck thread in epollWait],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/MAPREDUCE-6107
+MAPREDUCE,MAPREDUCE-5791,[Shuffle phase is slow in Windows - FadviseFileRegion::transferTo does not read disks efficiently],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-5791
+MAPREDUCE,MAPREDUCE-5689,[MRAppMaster does not preempt reducers when scheduled maps cannot be fulfilled],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/MAPREDUCE-5689
+MAPREDUCE,MAPREDUCE-5617,[map task is not re-launched when the task is failed while reducers are running with full cluster capacity - which will lead to job hang],"['sc-load', 'rc-logic-race']",https://issues.apache.org/jira/browse/MAPREDUCE-5617
+MAPREDUCE,MAPREDUCE-5601,[ShuffleHandler fadvises file regions as DONTNEED even when fetch fails],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/MAPREDUCE-5601
+MAPREDUCE,MAPREDUCE-5510,"[Root queue is full, leads to a job hung, it's reduces started,but some maps is pending]","['sc-load', 'rc-logic-race']",https://issues.apache.org/jira/browse/MAPREDUCE-5510
+MAPREDUCE,MAPREDUCE-5508,[JobTracker memory leak caused by unreleased FileSystem objects in JobInProgress#cleanupJob],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-5508
+MAPREDUCE,MAPREDUCE-5402,[DynamicInputFormat should allow overriding of MAX_CHUNKS_TOLERABLE],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-5402
+MAPREDUCE,MAPREDUCE-5168,[Reducer can OOM during shuffle because on-disk output stream not released],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-5168
+MAPREDUCE,MAPREDUCE-5124,[AM lacks flow control for task events],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/MAPREDUCE-5124
+MAPREDUCE,MAPREDUCE-5043,[Fetch failure processing can cause AM event queue to backup and eventually OOM],"['sc-fail', 'rc-compute-app']",https://issues.apache.org/jira/browse/MAPREDUCE-5043
+MAPREDUCE,MAPREDUCE-5027,[Shuffle does not limit number of outstanding connections],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/MAPREDUCE-5027
+MAPREDUCE,MAPREDUCE-4946,[Type conversion of map completion events leads to performance problems with large jobs],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/MAPREDUCE-4946
+MAPREDUCE,MAPREDUCE-4817,[Hardcoded task ping timeout kills tasks localizing large amounts of data],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-4817
+MAPREDUCE,MAPREDUCE-4815,[FileOutputCommitter.commitJob can be very slow for jobs with many output files],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-4815
+MAPREDUCE,MAPREDUCE-4730,[AM crashes due to OOM while serving up map task completion events],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/MAPREDUCE-4730
+MAPREDUCE,MAPREDUCE-4576,[Large dist cache can block tasktracker heartbeat],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/MAPREDUCE-4576
+MAPREDUCE,MAPREDUCE-4379,[Node Manager throws java.lang.OutOfMemoryError: Java heap space due to org.apache.hadoop.fs.LocalDirAllocator.contexts],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/MAPREDUCE-4379
+MAPREDUCE,MAPREDUCE-3713,[Incorrect headroom reported to jobs],"['sc-load', 'rc-logic-race']",https://issues.apache.org/jira/browse/MAPREDUCE-3713
+MAPREDUCE,MAPREDUCE-3711,[AppMaster recovery for Medium to large jobs take long time],"['sc-fail', 'rc-compute-cross']",https://issues.apache.org/jira/browse/MAPREDUCE-3711
+MAPREDUCE,MAPREDUCE-3567,[Extraneous JobConf objects in AM heap],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/MAPREDUCE-3567
+MAPREDUCE,MAPREDUCE-3511,[Counters occupy a good part of AM heap],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/MAPREDUCE-3511
+MAPREDUCE,MAPREDUCE-2947,[Sort fails on YARN+MR with lots of task failures],"['sc-fail', 'rc-logic-race']",https://issues.apache.org/jira/browse/MAPREDUCE-2947
+KAFKA,KAFKA-10901,[Lock contention on high produce rate causing cluster degregation],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-10901
+KAFKA,KAFKA-12225,[Unexpected broker bottleneck when scaling producers],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-12225
+KAFKA,KAFKA-12258,[Change the BatchAccumulator to split records into batches],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/KAFKA-12258
+KAFKA,KAFKA-12731,[High number of rebalances lead to GC Overhead limit exceeded JVM crash],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-12731
+KAFKA,KAFKA-12804,[In-Memory state store backed by InMemoryKeyValueStore is slow due to synchronizing reads/writes using a single lock.],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-12804
+KAFKA,KAFKA-12868,[log cleaner failed with java.lang.ArrayIndexOutOfBoundsException: -2147483648],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/KAFKA-12868
+KAFKA,KAFKA-12946,[__consumer_offsets topic with very big partitions],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/KAFKA-12946
+KAFKA,KAFKA-13007,[KafkaAdminClient getListOffsetsCalls builds cluster snapshot for every topic partition],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/KAFKA-13007
+KAFKA,KAFKA-13134,[Heartbeat Request high lock contention],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-13134
+KAFKA,KAFKA-13135,[Reduce GroupMetadata lock contention for offset commit requests],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-13135
+KAFKA,KAFKA-13280,[Avoid O(N) behavior in KRaftMetadataCache#topicNamesToIds],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-13280
+KAFKA,KAFKA-14168,[Constant memory usage increase],"['sc-clus', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-14168
+KAFKA,KAFKA-14715,[Reduce Fetcher#parseRecord() memory copy],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-14715
+KAFKA,KAFKA-14878,[Reduce assignment data size to improve Kafka Consumer scalability],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-14878
+KAFKA,KAFKA-14928,[Metrics collection contends on lock with log cleaning],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-14928
+KAFKA,KAFKA-14944,[Reduce CompletedFetch#parseRecord() memory copy],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-14944
+KAFKA,KAFKA-14945,[Add Serializer#serializeToByteBuffer() to reduce memory copying],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-14945
+KAFKA,KAFKA-15046,[Produce performance issue under high disk load],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-15046
+KAFKA,KAFKA-15139,[Optimize the performance of `Set.removeAll(List)` in `MirrorCheckpointConnector`],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-15139
+KAFKA,KAFKA-15173,[Consumer event queues should be bounded],"['sc-load', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-15173
+KAFKA,KAFKA-15587,[Limit the number of records per batch in GroupCoordinatorShard#cleanupGroupMetadata],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/KAFKA-15587
+KAFKA,KAFKA-15873,[Improve the performance of the DescribeTopicPartitions API],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/KAFKA-15873
+KAFKA,KAFKA-15884,[Reduce lock contention when cleaning topics],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-15884
+KAFKA,KAFKA-16284,[Performance regression in RocksDB],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-16284
+KAFKA,KAFKA-10846,[FileStreamSourceTask buffer can grow without bound],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-10846
+KAFKA,KAFKA-9393,[DeleteRecords may cause extreme lock contention for large partition directories],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-9393
+KAFKA,KAFKA-8736,[Performance: ThreadCache uses size() for empty cache check],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-8736
+KAFKA,KAFKA-7142,[Rebalancing large consumer group can block the coordinator broker for several seconds],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/KAFKA-7142
+KAFKA,KAFKA-6134,[High memory usage on controller during partition reassignment],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/KAFKA-6134
+KAFKA,KAFKA-5642,[Use async ZookeeperClient in Controller],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-5642
+KAFKA,KAFKA-5345,[Some socket connections not closed after restart of Kafka Streams],"['sc-fail', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-5345
+KAFKA,KAFKA-5250,[handleFetchRequest should do down conversion after throttling],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-5250
+KAFKA,KAFKA-4851,[SessionStore.fetch(key) is a performance bottleneck],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/KAFKA-4851
+KAFKA,KAFKA-4469,[Consumer throughput regression caused by inefficient list removal and copy],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-4469
+KAFKA,KAFKA-4444,[Aggregate requests sent from controller to broker during controlled shutdown],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/KAFKA-4444
+KAFKA,KAFKA-4415,[Reduce time to create and send MetadataUpdateRequest],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/KAFKA-4415
+KAFKA,KAFKA-3933,[Kafka OOM During Log Recovery Due to Leaked Native Memory],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-3933
+KAFKA,KAFKA-3904,[File descriptor leaking (Too many open files) for long running stream process],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-3904
+KAFKA,KAFKA-3773,[SocketServer inflightResponses collection leaks memory on client disconnect],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-3773
+KAFKA,KAFKA-3619,[State lock file handle leaks],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-3619
+KAFKA,KAFKA-1952,[High CPU Usage in 0.8.2 release],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/KAFKA-1952
+KAFKA,KAFKA-1567,[Metric memory leaking after closing the clients],"['sc-clus', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-1567
+KAFKA,KAFKA-1041,[Number of file handles increases indefinitely in producer if broker host is unresolvable],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-1041
+KAFKA,KAFKA-1017,[High number of open file handles in 0.8 producer],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/KAFKA-1017
+KAFKA,KAFKA-936,[Kafka Metrics Memory Leak],"['sc-clus', 'rc-logic-leak']",https://issues.apache.org/jira/browse/KAFKA-936
+STORM,STORM-3256,"[If all thread counts exceed 32767, the system will generate errors]","['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/STORM-3256
+STORM,STORM-3073,[In some cases workers may crash because pendingEmits is full],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/STORM-3073
+STORM,STORM-2853,[Deactivated topologies cause high cpu utilization],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/STORM-2853
+STORM,STORM-2786,[Ackers leak tracking info on failure and lots of other cases.],"['sc-fail', 'rc-logic-leak']",https://issues.apache.org/jira/browse/STORM-2786
+STORM,STORM-2764,[HDFSBlobStore leaks file system objects],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/STORM-2764
+STORM,STORM-2751,[Remove AsyncLoggingContext from Supervisor],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/STORM-2751
+STORM,STORM-2733,[Make Load Aware Shuffle much better at really bad situations],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/STORM-2733
+STORM,STORM-2423,[Join Bolt : Use explicit instead of default window anchoring of emitted tuples],"['sc-load', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/STORM-2423
+STORM,STORM-2422,[Serialized Trident topology size does not grow linerarly],"['sc-clus', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/STORM-2422
+STORM,STORM-2122,[Supervisor V2 can use a lot more memory],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/STORM-2122
+STORM,STORM-2042,[Nimbus client connections not closed properly causing connection leaks],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/STORM-2042
+STORM,STORM-1954,[Large Trident topologies can cause memory issues due to DefaultResourceDeclarer object reading config],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/STORM-1954
+STORM,STORM-387,[Memory leak in worker],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/STORM-387
+STORM,STORM-339,[Severe memory leak to OOM when ackers disabled],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/STORM-339
+STORM,STORM-297,[Storm Performance cannot be scaled up by adding more CPU cores],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/STORM-297
+IGNITE,IGNITE-18204,[Start RAFT groups of table partitions in parallel],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/IGNITE-18204
+IGNITE,IGNITE-14076,[Significant performance degradation in transactional cache with a large number of keys enlisted.],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/IGNITE-14076
+IGNITE,IGNITE-16760,[Performance degradation of IgniteTables#tables after configuration changes],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/IGNITE-16760
+IGNITE,IGNITE-16866,[Integer value is out of bounds when the dataregion maxSize is large enough],"['sc-clus', 'rc-logic-corner']",https://issues.apache.org/jira/browse/IGNITE-16866
+IGNITE,IGNITE-17591,[Refactor toString generation for network messages],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/IGNITE-17591
+IGNITE,IGNITE-19275,[Creation of big amount of tables throws exception],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/IGNITE-19275
+IGNITE,IGNITE-19818,[Calcite engine. Query planning failed when cache size is too big],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/IGNITE-19818
+IGNITE,IGNITE-20291,[Possible memory leak in StreamerBuffer],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-20291
+IGNITE,IGNITE-21082,[Ignite Extensions: Excessive memory usage by performance statistics QueryHandler],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-21082
+IGNITE,IGNITE-14003,[OOM on creating rebalance iterator while rebalancing cache with large values],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/IGNITE-14003
+IGNITE,IGNITE-12350,[MVCC activated and causing memory leak (OOM) despite no mvccEnabled caches],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-12350
+IGNITE,IGNITE-12292,[Java thin client: In some cases txId intersection (tx started on different nodes) leads to errors],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-12292
+IGNITE,IGNITE-12255,[Cache affinity fetching and calculation on client nodes may be broken in some cases],"['sc-load', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-12255
+IGNITE,IGNITE-12189,[Implement correct limit for TextQuery],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/IGNITE-12189
+IGNITE,IGNITE-12087,[Transactional putAll - significant performance drop on big batches of entries.],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/IGNITE-12087
+IGNITE,IGNITE-12042,[Atempt to remove entries from fully populated data region may result in IgineOutOfMemoryException],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/IGNITE-12042
+IGNITE,IGNITE-11755,[Memory leak H2 connections at the ConnectionManager#detachedConns],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-11755
+IGNITE,IGNITE-11754,[Memory leak on the GridCacheTxFinishSync#threadMap],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-11754
+IGNITE,IGNITE-11654,[ML: Memory leak in KNNClassificationModel],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-11654
+IGNITE,IGNITE-11641,[Server node copies a lot of WAL files in WAL archive after restart],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/IGNITE-11641
+IGNITE,IGNITE-11524,[Memory leak caused by executing a jdbc prepared statement],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-11524
+IGNITE,IGNITE-10823,[Close all open cursors for running queries on Ignite stop],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-10823
+IGNITE,IGNITE-9657,[socket leak in TcpDiscoverySpi],"['sc-clus', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-9657
+IGNITE,IGNITE-9196,[SQL: Memory leak in MapNodeResults],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-9196
+IGNITE,IGNITE-8681,[Using ExpiryPolicy with persistence causes significant slowdown.],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/IGNITE-8681
+IGNITE,IGNITE-8657,[Simultaneous start of bunch of client nodes may lead to some clients hangs],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-8657
+IGNITE,IGNITE-8252,[NullPointerException is thrown during parallel massive start of nodes],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-8252
+IGNITE,IGNITE-6334,[Throttle writing threads during ongoing checkpoint with token bucket algorithm],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/IGNITE-6334
+IGNITE,IGNITE-6124,[Try merge multiple exchanges into one],"['sc-fail', 'rc-compute-cross']",https://issues.apache.org/jira/browse/IGNITE-6124
+IGNITE,IGNITE-6019,[SQL: client node should not hold the whole data set in-memory when possible],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/IGNITE-6019
+IGNITE,IGNITE-5943,[Communication. Server node may reject client connection during massive clients join],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-5943
+IGNITE,IGNITE-5593,[Affinity change message leak on massive topology updates],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/IGNITE-5593
+IGNITE,IGNITE-5578,[Discovery events coalescing],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/IGNITE-5578
+IGNITE,IGNITE-5569,[TCP Discovery SPI allows multiple NODE_JOINED / NODE_FAILED leading to a cluster DDoS],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/IGNITE-5569
+IGNITE,IGNITE-5552,[ServiceProcessor recalculates all service assignments even if there is a pending topology change],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/IGNITE-5552
+IGNITE,IGNITE-5521,[Large near caches lead to cluster instability with metrics enabled],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/IGNITE-5521
+IGNITE,IGNITE-5100,[Exchange queue is not used properly],"['sc-clus', 'rc-logic-corner']",https://issues.apache.org/jira/browse/IGNITE-5100
+IGNITE,IGNITE-5093,[Better heap usage during exchange on large topologies and cache numbers/partitions.],"['sc-clus', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/IGNITE-5093
+IGNITE,IGNITE-5068,[Redesign GridDhtPartitionTopologyImpl.part2node map to store only diff from affinity assignment],"['sc-clus', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/IGNITE-5068
+IGNITE,IGNITE-4712,[Memory leaks in PageMemory],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-4712
+IGNITE,IGNITE-4552,[Optimize GridDhtLocalPartition.rmvQueue],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/IGNITE-4552
+IGNITE,IGNITE-3090,[Memory leak in IgniteH2Indexing prepared statements cache],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/IGNITE-3090
+IGNITE,IGNITE-3018,[Cache affinity calculation is slow with large nodes number],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/IGNITE-3018
+IGNITE,IGNITE-2951,[Cluster is unstable when there are more than 500 clients],"['sc-load', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/IGNITE-2951
+IGNITE,IGNITE-1837,[Rebalancing on a big cluster (30 nodes and more)],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/IGNITE-1837
+HBASE,HBASE-24211,[Create table is slow in large cluster when AccessController is enabled.],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-24211
+HBASE,HBASE-24791,[Improve HFileOutputFormat2 to avoid always call getTableRelativePath method],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-24791
+HBASE,HBASE-24925,[SCP reduce unnecessary get requests],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-24925
+HBASE,HBASE-25510,[Optimize TableName.valueOf from O(n) to O(1).  We can get benefits when the number of tables in the cluster is greater than dozens],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HBASE-25510
+HBASE,HBASE-25857,[HBase bulk import fails with exitCode -100],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-25857
+HBASE,HBASE-26017,[hbase performance evaluation tool  could not support datasize more than 2048g],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HBASE-26017
+HBASE,HBASE-27826,[Region split and merge time while offline is O(n) with respect to number of store files],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HBASE-27826
+HBASE,HBASE-23679,[FileSystem instance leaks due to bulk loads with Kerberos enabled],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-23679
+HBASE,HBASE-23601,[OutputSink.WriterThread exception gets stuck and repeated indefinietly],"['sc-fail', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HBASE-23601
+HBASE,HBASE-16165,[Decrease RpcServer.callQueueSize before writeResponse causes OOM],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-16165
+HBASE,HBASE-12394,[Support multiple regions as input to each mapper in map/reduce jobs],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-12394
+HBASE,HBASE-12139,[StochasticLoadBalancer doesn't work on large lightly loaded clusters],"['sc-clus', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HBASE-12139
+HBASE,HBASE-11747,[ClusterStatus is too bulky ],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HBASE-11747
+HBASE,HBASE-11544,[[Ergonomics] hbase.client.scanner.caching is dogged and will try to return batch even if it means OOME],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-11544
+HBASE,HBASE-11368,[Multi-column family BulkLoad fails if compactions go on too long],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-11368
+HBASE,HBASE-11290,[Unlock RegionStates],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-11290
+HBASE,HBASE-10792,[RingBufferTruck does not release its payload],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-10792
+HBASE,HBASE-10501,[Improve IncreasingToUpperBoundRegionSplitPolicy to avoid too many regions],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HBASE-10501
+HBASE,HBASE-10470,[Import generates huge log file while importing large amounts of data],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-10470
+HBASE,HBASE-10312,[Flooding the cluster with administrative actions leads to collapse],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-10312
+HBASE,HBASE-10209,[Speed region assign in failover],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-10209
+HBASE,HBASE-9775,[Client write path perf issues],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HBASE-9775
+HBASE,HBASE-9467,[write can be totally blocked temporarily by a write-heavy region],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-9467
+HBASE,HBASE-9377,"[Backport HBASE- 9208 ""ReplicationLogCleaner slow at large scale""]","['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-9377
+HBASE,HBASE-9208,[ReplicationLogCleaner slow at large scale],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-9208
+HBASE,HBASE-8778,[Region assigments scan table directory making them slow for huge tables],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-8778
+HBASE,HBASE-7220,[Creating a table with 3000 regions on 2 nodes fails after 1 hour],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-7220
+HBASE,HBASE-6728,[[89-fb] prevent OOM possibility due to per connection responseQueue being unbounded],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-6728
+HBASE,HBASE-6727,[[89-fb] allow HBaseServers's callqueue to be better configurable to avoid OOMs],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-6727
+HBASE,HBASE-6423,[Writes should not block reads on blocking updates to memstores],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-6423
+HBASE,HBASE-6103,[Optimize the HBaseServer to deserialize the data for each ipc connection in parallel],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HBASE-6103
+HBASE,HBASE-6018,[hbck fails with a RejectedExecutionException when >50 regions present],"['sc-clus', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HBASE-6018
+HBASE,HBASE-5712,[Parallelize load of .regioninfo files in diagnostic/repair portion of hbck.],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-5712
+HBASE,HBASE-5190,[Limit the IPC queue size based on calls' payload size],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HBASE-5190
+HBASE,HBASE-4863,[Make Thrift server thread pool bounded and add a command-line UI test],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HBASE-4863
+HBASE,HBASE-4742,[Split dead server's log in parallel],"['sc-fail', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HBASE-4742
+SPARK,SPARK-30964,[Accelerate InMemoryStore with a new index],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-30964
+SPARK,SPARK-42162,[Memory usage on executors increased drastically for a complex query with large number of addition operations],"['sc-load', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-42162
+SPARK,SPARK-48967,"[Improve performance and memory footprint of ""INSERT INTO ... VALUES"" Statements]","['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-48967
+SPARK,SPARK-36733,[Perf issue in SchemaPruning when a struct has many fields],"['sc-load', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-36733
+SPARK,SPARK-47818,[Introduce plan cache in SparkConnectPlanner to improve performance of Analyze requests],"['sc-load', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-47818
+SPARK,SPARK-38406,[Improve perfermance of ShufflePartitionsUtil createSkewPartitionSpecs],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-38406
+SPARK,SPARK-30751,[Combine the skewed readers into one in AQE skew join optimizations],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-30751
+SPARK,SPARK-47836,[Performance problem with QuantileSummaries],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-47836
+SPARK,SPARK-34989,[Improve the performance of mapChildren and withNewChildren methods],"['sc-load', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-34989
+SPARK,SPARK-43043,[Improve the performance of MapOutputTracker.updateMapOutput],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-43043
+SPARK,SPARK-30735,[Improving writing performance by adding repartition based on columns to partitionBy for DataFrameWriter],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/SPARK-30735
+SPARK,SPARK-30511,[Spark marks intentionally killed speculative tasks as pending leads to holding idle executors],"['sc-fail', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/SPARK-30511
+SPARK,SPARK-30429,[WideSchemaBenchmark fails with OOM],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/SPARK-30429
+SPARK,SPARK-30379,[Avoid OOM when using collection accumulator],"['sc-load', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/SPARK-30379
+SPARK,SPARK-30246,[Spark on Yarn External Shuffle Service Memory Leak],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-30246
+SPARK,SPARK-29938,[Add batching in alter table add partition flow],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-29938
+SPARK,SPARK-29911,[Cache table may memory leak when session closed],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-29911
+SPARK,SPARK-29423,[leak on org.apache.spark.sql.execution.streaming.StreamingQueryListenerBus],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/SPARK-29423
+SPARK,SPARK-29351,[Avoid full synchronization in ShuffleMapStage],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/SPARK-29351
+SPARK,SPARK-29048,[Query optimizer slow when using Column.isInCollection() with a large size collection],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-29048
+SPARK,SPARK-28761,[spark.driver.maxResultSize only applies to compressed data],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-28761
+SPARK,SPARK-28709,[Memory leaks after stopping of StreamingContext],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-28709
+SPARK,SPARK-28607,[Don't hold a reference to two partitionLengths arrays],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/SPARK-28607
+SPARK,SPARK-28081,[word2vec 'large' count value too low for very large corpora],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/SPARK-28081
+SPARK,SPARK-28062,[HuberAggregator copies coefficients vector every time an instance is added],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-28062
+SPARK,SPARK-28025,[HDFSBackedStateStoreProvider should not leak .crc files],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-28025
+SPARK,SPARK-27818,[Spark Structured Streaming executors fails with OutOfMemoryError due to KafkaMbeans],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-27818
+SPARK,SPARK-27801,[InMemoryFileIndex.listLeafFiles should use listLocatedStatus for DistributedFileSystem],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/SPARK-27801
+SPARK,SPARK-27588,[Fail fast if binary file data source will load a file that is bigger than 2GB],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-27588
+SPARK,SPARK-27275,[Potential corruption in EncryptedMessage.transferTo],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/SPARK-27275
+SPARK,SPARK-27105,[Prevent exponential complexity in ORC `createFilter`],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-27105
+SPARK,SPARK-27100,[Use `Array` instead of `Seq` in `FilePartition` to prevent StackOverflowError],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/SPARK-27100
+SPARK,SPARK-27070,[DefaultPartitionCoalescer can lock up driver for hours],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-27070
+SPARK,SPARK-26734,[StackOverflowError on WAL serialization caused by large receivedBlockQueue],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/SPARK-26734
+SPARK,SPARK-26674,[Consolidate CompositeByteBuf when reading large frame],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/SPARK-26674
+SPARK,SPARK-26312,[Converting converters in RDDConversions into arrays to improve their access performance],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/SPARK-26312
+SPARK,SPARK-26103,[OutOfMemory error with large query plans],"['sc-data', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/SPARK-26103
+SPARK,SPARK-25947,[Reduce memory usage in ShuffleExchangeExec by selecting only the sort columns],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-25947
+SPARK,SPARK-25449,[Don't send zero accumulators in heartbeats],"['sc-clus', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/SPARK-25449
+SPARK,SPARK-25181,[Block Manager master and slave thread pools are unbounded],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/SPARK-25181
+SPARK,SPARK-21958,[Attempting to save large Word2Vec model hangs driver in constant GC],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/SPARK-21958
+SPARK,SPARK-17455,[IsotonicRegression takes non-polynomial time for some inputs],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-17455
+SPARK,SPARK-16440,[Undeleted broadcast variables in Word2Vec causing OoM for long runs],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/SPARK-16440
+SPARK,SPARK-12616,[Union logical plan should support arbitrary number of children (rather than binary)],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/SPARK-12616
+YARN,YARN-10739,[GenericEventHandler.printEventQueueDetails causes RM recovery to take too much time],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/YARN-10739
+YARN,YARN-9974,[Large diagnostics may cause RM recover fail],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/YARN-9974
+YARN,YARN-9861,"[The ResourceManager log reports an error ""Too many open files"", the analysis is related to the service]","['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-9861
+YARN,YARN-9858,[Optimize RMContext getExclusiveEnforcedPartitions],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/YARN-9858
+YARN,YARN-9565,[RMAppImpl#ranNodes not cleared on FinalTransition],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-9565
+YARN,YARN-9508,[YarnConfiguration areNodeLabel enabled is costly in allocation flow],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/YARN-9508
+YARN,YARN-9336,[JobHistoryServer leaks CLOSE_WAIT tcp connections when using LogAggregationIndexedFileController],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-9336
+YARN,YARN-9067,[YARN Resource Manager is running OOM because of leak of Configuration Object],"['sc-fail', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-9067
+YARN,YARN-8242,[YARN NM: OOM error while reading back the state store on recovery],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/YARN-8242
+YARN,YARN-8184,[Too many metrics if containerLocalizer/ResourceLocalizationService uses ReadWriteDiskValidator],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/YARN-8184
+YARN,YARN-7147,[ATS1.5 crash due to OOM],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/YARN-7147
+YARN,YARN-6967,[Limit application attempt's diagnostic message size thoroughly],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/YARN-6967
+YARN,YARN-6188,[Fix OOM issue with decommissioningNodesWatcher in the case of clusters with large number of nodes],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/YARN-6188
+YARN,YARN-6125,[The application attempt's diagnostic message should have a maximum size],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/YARN-6125
+YARN,YARN-5773,[RM recovery too slow due to LeafQueue#activateApplication()],"['sc-load', 'rc-compute-app']",https://issues.apache.org/jira/browse/YARN-5773
+YARN,YARN-5482,[ContainerMetric Lead to memory leaks],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-5482
+YARN,YARN-5438,[TimelineClientImpl leaking FileSystem Instances causing Long running services like HiverServer2 daemon going OOM],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-5438
+YARN,YARN-5296,[NMs going OutOfMemory because ContainerMetrics leak in ContainerMonitorImpl],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/YARN-5296
+YARN,YARN-2314,[ContainerManagementProtocolProxy can create thousands of threads for a large cluster],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/YARN-2314
+YARN,YARN-467,[Jobs fail during resource localization when public distributed-cache hits unix directory limits],"['sc-load', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/YARN-467
+HDFS,HDFS-15406,[Improve the speed of Datanode Block Scan],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-15406
+HDFS,HDFS-15621,[Datanode DirectoryScanner uses excessive memory],"['sc-data', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-15621
+HDFS,HDFS-16100,[HA: Improve performance of Standby node transition to Active],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-16100
+HDFS,HDFS-16989,[Large scale block transfer causes too many excess blocks],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-16989
+HDFS,HDFS-17096,[Out of memory exception when mistakenly set ipc.server.read.threadpool.size to a large value],"['sc-clus', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HDFS-17096
+HDFS,HDFS-17097,[Out of Memory when set dfs.namenode.blockreport.queue.size to a large number],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-17097
+HDFS,HDFS-15150,[Introduce read write lock to Datanode],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-15150
+HDFS,HDFS-15118,[[SBN Read] Slow clients when Observer reads are enabled but there are no Observers on the cluster.],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-15118
+HDFS,HDFS-14997,[BPServiceActor processes commands from NameNode asynchronously],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14997
+HDFS,HDFS-14973,[Balancer getBlocks RPC dispersal does not function properly],"['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-14973
+HDFS,HDFS-14859,[Prevent unnecessary evaluation of costly operation getNumLiveDataNodes when dfs.namenode.safemode.min.datanodes is not zero],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-14859
+HDFS,HDFS-14854,[Create improved decommission monitor implementation],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14854
+HDFS,HDFS-14849,[Erasure Coding: the internal block is replicated many times when datanode is decommissioning],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/HDFS-14849
+HDFS,HDFS-14771,[Backport HDFS-14617 to branch-2 (Improve fsimage load time by writing sub-sections to the fsimage index)],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-14771
+HDFS,HDFS-14657,[Refine NameSystem lock usage during processing FBR],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14657
+HDFS,HDFS-14613,[BlockManagerSafeMode should avoid to check datanode thresholds with default zero value.],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-14613
+HDFS,HDFS-14547,[DirectoryWithQuotaFeature.quota costs additional memory even the storage type quota is not set.],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/HDFS-14547
+HDFS,HDFS-14513,[FSImage which is saving should be clean while NameNode shutdown],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-14513
+HDFS,HDFS-14497,[Write lock held by metasave impact following RPC processing],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14497
+HDFS,HDFS-14492,[Snapshot memory leak],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-14492
+HDFS,HDFS-14476,[lock too long when fix inconsistent blocks between disk and in-memory],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14476
+HDFS,HDFS-14370,[Edit log tailing fast-path should allow for backoff],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-14370
+HDFS,HDFS-14366,[Improve HDFS append performance],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-14366
+HDFS,HDFS-14308,[DFSStripedInputStream curStripeBuf is not freed by unbuffer()],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-14308
+HDFS,HDFS-14295,[Add Threadpool for DataTransfers],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-14295
+HDFS,HDFS-14201,[Ability to disallow safemode NN to become active],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-14201
+HDFS,HDFS-14171,[Performance improvement in Tailing EditLog],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-14171
+HDFS,HDFS-14112,[Avoid recursive call to external authorizer for getContentSummary.],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-14112
+HDFS,HDFS-14111,[hdfsOpenFile on HDFS causes unnecessary IO from file offset 0],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-14111
+HDFS,HDFS-13977,[NameNode can kill itself if it tries to send too many txns to a QJM simultaneously],"['sc-load', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HDFS-13977
+HDFS,HDFS-13872,[Only some protocol methods should perform msync wait],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-13872
+HDFS,HDFS-13821,[RBF: Add dfs.federation.router.mount-table.cache.enable so that users can disable cache],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-13821
+HDFS,HDFS-13794,[[PROVIDED Phase 2] Teach BlockAliasMap.Writer `remove` method.],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-13794
+HDFS,HDFS-13780,[Postpone NameNode state discovery in ObserverReadProxyProvider until the first real RPC call.],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-13780
+HDFS,HDFS-13768,[Adding replicas to volume map makes DataNode start slowly],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-13768
+HDFS,HDFS-13703,[Avoid allocation of CorruptedBlocks hashmap when no corrupted blocks are hit],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/HDFS-13703
+HDFS,HDFS-13702,[Remove HTrace hooks from DFSClient to reduce CPU usage],"['sc-load', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-13702
+HDFS,HDFS-13694,[Making md5 computing being in parallel with image loading],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-13694
+HDFS,HDFS-13693,[Remove unnecessary search in INodeDirectory.addChild during image loading],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-13693
+HDFS,HDFS-13692,[StorageInfoDefragmenter floods log when compacting StorageInfo TreeSet],"['sc-clus', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-13692
+HDFS,HDFS-13136,[Avoid taking FSN lock while doing group member lookup for FSD permission check],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-13136
+HDFS,HDFS-13122,[Tailing edits should not update quota counts on ObserverNode],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-13122
+HDFS,HDFS-13039,[StripedBlockReader#createBlockReader leaks socket on IOException],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-13039
+HDFS,HDFS-12998,[SnapshotDiff - Provide an iterator-based listing API for calculating snapshotDiff],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-12998
+HDFS,HDFS-12947,[Limit the number of Snapshots allowed to be created for a Snapshottable Directory],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-12947
+HDFS,HDFS-12914,[Block report leases cause missing blocks until next report],"['sc-fail', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-12914
+HDFS,HDFS-12866,[Recursive delete of a large directory or snapshot makes namenode unresponsive],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-12866
+HDFS,HDFS-12802,[RBF: Control MountTableResolver cache size],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-12802
+HDFS,HDFS-12777,[[READ] Reduce memory and CPU footprint for PROVIDED volumes.],"['sc-data', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/HDFS-12777
+HDFS,HDFS-12749,[DN may not send block report to NN after NN restart],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-12749
+HDFS,HDFS-12748,[NameNode memory leak when accessing webhdfs GETHOMEDIRECTORY],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-12748
+HDFS,HDFS-12528,[Add an option to not disable short-circuit reads on failures],"['sc-load', 'rc-logic-race']",https://issues.apache.org/jira/browse/HDFS-12528
+HDFS,HDFS-11661,[GetContentSummary uses excessive amounts of memory],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HDFS-11661
+HDFS,HDFS-11384,[Add option for balancer to disperse getBlocks calls to avoid NameNode's rpc.CallQueueLength spike],"['sc-clus', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-11384
+HDFS,HDFS-11225,[NameNode crashed because deleteSnapshot held FSNamesystem lock too long],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-11225
+HDFS,HDFS-10477,[Stop decommission a rack of DataNodes caused NameNode fail over to standby],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-10477
+HDFS,HDFS-9668,[Optimize the locking in FsDatasetImpl],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-9668
+HDFS,HDFS-8791,[block ID-based DN storage layout can be very slow for datanode on ext4],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-8791
+HDFS,HDFS-7276,[Limit the number of byte arrays used by DFSOutputStream],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-7276
+HDFS,HDFS-7213,[processIncrementalBlockReport performance degradation],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-7213
+HDFS,HDFS-6658,[Namenode memory optimization - Block replicas list ],"['sc-data', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/HDFS-6658
+HDFS,HDFS-6425,[Large postponedMisreplicatedBlocks has impact on blockReport latency],"['sc-fail', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-6425
+HDFS,HDFS-6214,[Webhdfs has poor throughput for files >2GB],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-6214
+HDFS,HDFS-6102,[Lower the default maximum items per directory to fix PB fsimage loading],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HDFS-6102
+HDFS,HDFS-6080,[Improve NFS gateway performance by making rtmax and wtmax configurable],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-6080
+HDFS,HDFS-5790,[LeaseManager.findPath is very slow when many leases need recovery],"['sc-load', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-5790
+HDFS,HDFS-5788,[listLocatedStatus response can be very large],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-5788
+HDFS,HDFS-5757,[refreshNodes with many nodes at the same time could slow down NN],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-5757
+HDFS,HDFS-5461,[fallback to non-ssr(local short circuit reads) while oom detected],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-5461
+HDFS,HDFS-5364,[Add OpenFileCtx cache],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-5364
+HDFS,HDFS-5341,[Reduce fsdataset lock duration during directory scanning.],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-5341
+HDFS,HDFS-5248,[Checkpointing fails in uploading the Image to the Namenode if the merge requires more than 10 hours in secure cluster],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-5248
+HDFS,HDFS-5153,[Datanode should send block reports for each storage in a separate message],"['sc-data', 'rc-compute-sync', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HDFS-5153
+HDFS,HDFS-4992,[Make balancer's thread count configurable],"['sc-data', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-4992
+HDFS,HDFS-4937,[ReplicationMonitor can infinite-loop in BlockPlacementPolicyDefault#chooseRandom()],"['sc-clus', 'rc-logic-race']",https://issues.apache.org/jira/browse/HDFS-4937
+HDFS,HDFS-4515,[ReplicaMap thread-safe synchronization lead to a large number of threads blocking],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-4515
+HDFS,HDFS-4479,[logSync() with the FSNamesystem lock held in commitBlockSynchronization],"['sc-load', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-4479
+HDFS,HDFS-4477,[Secondary namenode may retain old tokens],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-4477
+HDFS,HDFS-4183,[Throttle block recovery],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-4183
+HDFS,HDFS-4161,[HDFS keeps a thread open for every file writer],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-4161
+HDFS,HDFS-4075,[Reduce recommissioning overhead],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-4075
+HDFS,HDFS-3998,[Speed up fsck],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-3998
+HDFS,HDFS-3990,[NN's health report has severe performance problems],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-3990
+HDFS,HDFS-3906,[QJM: quorum timeout on failover with large log segment],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-3906
+HDFS,HDFS-3646,[LeaseRenewer can hold reference to inactive DFSClient instances forever],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-3646
+HDFS,HDFS-3545,[DFSClient leak due to malfunctioning of FileSystem Cache],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HDFS-3545
+HDFS,HDFS-3373,[FileContext HDFS implementation can leak socket caches],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-3373
+HDFS,HDFS-2982,[Startup performance suffers when there are many edit log segments],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HDFS-2982
+HDFS,HDFS-2938,[Recursive delete of a large directory makes namenode unresponsive],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-2938
+HDFS,HDFS-2495,[Increase granularity of write operations in ReplicationMonitor thus reducing contention for write lock],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-2495
+HDFS,HDFS-2494,"[[webhdfs] When Getting the file using OP=OPEN with DN http address, ESTABLISHED sockets are growing.]","['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-2494
+HDFS,HDFS-2379,[0.20: Allow block reports to proceed without holding FSDataset lock],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-2379
+HDFS,HDFS-1840,[Terminate LeaseChecker when all writing files are closed.],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-1840
+HDFS,HDFS-1836,[Thousand of CLOSE_WAIT socket ],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HDFS-1836
+HDFS,HDFS-1104,[Fsck triggers full GC on NameNode],"['sc-data', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-1104
+HDFS,HDFS-1070,[Speedup NameNode image loading and saving by storing local file names],"['sc-data', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/HDFS-1070
+HDFS,HDFS-946,[NameNode should not return full path name when lisitng a directory or getting the status of a file],"['sc-load', 'rc-bloat-opt']",https://issues.apache.org/jira/browse/HDFS-946
+HDFS,HDFS-918,[Use single Selector and small thread pool to replace many instances of BlockSender for reads],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-918
+HDFS,HDFS-767,[Job failure due to BlockMissingException],"['sc-fail', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-767
+HDFS,HDFS-611,[Heartbeats times from Datanodes increase when there are plenty of blocks to delete],"['sc-data', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HDFS-611
+HDFS,HDFS-395,[DFS Scalability: Incremental block reports],"['sc-data', 'rc-compute-app']",https://issues.apache.org/jira/browse/HDFS-395
+HDFS,HDFS-374,[HDFS needs to support a very large number of open files.],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-374
+HDFS,HDFS-285,[limit concurrent connections(data serving thread) in one datanode],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-285
+HDFS,HDFS-262,"[On a busy cluster, it is possible for the client to believe it cannot fetch a block when the client or datanodes are running slowly]","['sc-load', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HDFS-262
+HDFS,HDFS-162,"[DataNode fails to deliver blocks, holds thousands of open socket connections]","['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HDFS-162
+HADOOP,HADOOP-18347,[Restrict vectoredIO threadpool to reduce memory pressure],"['sc-data', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-18347
+HADOOP,HADOOP-17195,[Intermittent OutOfMemory error while performing hdfs CopyFromLocal to abfs],"['sc-data', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-17195
+HADOOP,HADOOP-18324,[Interrupting RPC Client calls can lead to thread exhaustion],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-18324
+HADOOP,HADOOP-16850,[Support getting thread info from thread group for JvmMetrics to improve the performance],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-16850
+HADOOP,HADOOP-16452,[Increase ipc.maximum.data.length default from 64MB to 128MB],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HADOOP-16452
+HADOOP,HADOOP-16435,[RpcMetrics should not be retained forever],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-16435
+HADOOP,HADOOP-16385,"[Namenode crashes with ""RedundancyMonitor thread received Runtime exception""]","['sc-fail', 'rc-logic-race']",https://issues.apache.org/jira/browse/HADOOP-16385
+HADOOP,HADOOP-16278,"[With S3A Filesystem, Long Running services End up Doing lot of GC and eventually die]","['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-16278
+HADOOP,HADOOP-16248,[MutableQuantiles leak memory under heavy load],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HADOOP-16248
+HADOOP,HADOOP-16242,[ABFS: add bufferpool to AbfsOutputStream],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-16242
+HADOOP,HADOOP-16228,[Throwing OOM exception for ListStatus (v2) when using S3A with non S3-compatible service],"['sc-data', 'rc-unbound-temporary']",https://issues.apache.org/jira/browse/HADOOP-16228
+HADOOP,HADOOP-15813,[Enable more reliable SSL connection reuse],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-15813
+HADOOP,HADOOP-15696,[KMS performance regression due to too many open file descriptors after Jetty migration],"['sc-load', 'rc-unbound-os']",https://issues.apache.org/jira/browse/HADOOP-15696
+HADOOP,HADOOP-15565,[ViewFileSystem.close doesn't close child filesystems and causes FileSystem objects leak.],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-15565
+HADOOP,HADOOP-15358,[SFTPConnectionPool connections leakage],"['sc-data', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-15358
+HADOOP,HADOOP-14727,[Socket not closed properly when reading Configurations with BlockReaderRemote],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-14727
+HADOOP,HADOOP-14600,[LocatedFileStatus constructor forces RawLocalFS to exec a process to get the permissions],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-14600
+HADOOP,HADOOP-14412,[HostsFileReader#getHostDetails is very expensive on large clusters],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HADOOP-14412
+HADOOP,HADOOP-14376,[Memory leak when reading a compressed file using the native library],"['sc-load', 'rc-logic-leak']",https://issues.apache.org/jira/browse/HADOOP-14376
+HADOOP,HADOOP-14369,[NetworkTopology calls expensive toString() when logging],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HADOOP-14369
+HADOOP,HADOOP-14071,[S3a: Failed to reset the request input stream],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-14071
+HADOOP,HADOOP-14028,[3A BlockOutputStreams doesn't delete temporary files in multipart uploads or handle part upload failures],"['sc-data', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/HADOOP-14028
+HADOOP,HADOOP-13403,[AzureNativeFileSystem rename/delete performance improvements],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-13403
+HADOOP,HADOOP-12707,"[key of FileSystem inner class Cache contains UGI.hascode which uses the default hascode method, leading to the memory leak with Proxy Users]","['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HADOOP-12707
+HADOOP,HADOOP-12376,[S3NInputStream.close() downloads the remaining bytes of the object from S3],"['sc-data', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-12376
+HADOOP,HADOOP-12173,[NetworkTopology#add calls NetworkTopology#toString always],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HADOOP-12173
+HADOOP,HADOOP-12107,[long running apps may have a huge number of StatisticsData instances under FileSystem],"['sc-load', 'rc-unbound-persistent']",https://issues.apache.org/jira/browse/HADOOP-12107
+HADOOP,HADOOP-12054,[RPC client should not retry for InvalidToken exceptions],"['sc-fail', 'rc-logic-corner']",https://issues.apache.org/jira/browse/HADOOP-12054
+HADOOP,HADOOP-11891,[OsSecureRandom should lazily fill its reservoir],"['sc-load', 'rc-bloat-waste']",https://issues.apache.org/jira/browse/HADOOP-11891
+HADOOP,HADOOP-6713,[The RPC server Listener thread is a scalability bottleneck],"['sc-load', 'rc-compute-cross']",https://issues.apache.org/jira/browse/HADOOP-6713
+HADOOP,HADOOP-4061,[Large number of decommission freezes the Namenode],"['sc-clus', 'rc-compute-sync']",https://issues.apache.org/jira/browse/HADOOP-4061
+HADOOP,HADOOP-1073,[DFS Scalability: high CPU usage in choosing replication targets and file open],"['sc-clus', 'rc-compute-app']",https://issues.apache.org/jira/browse/HADOOP-1073

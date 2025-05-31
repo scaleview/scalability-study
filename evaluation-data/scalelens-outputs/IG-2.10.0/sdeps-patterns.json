@@ -1,0 +1,5205 @@
+[
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.unmarshal",
+        "lineNumber": 10405,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.addInvalidPartition",
+        "lineNumber": 719,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.startRemoteTx",
+        "lineNumber": 1800,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.resolveClassLoader",
+        "lineNumber": 2618,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.query.h2.ConcurrentStripedPool.forEach",
+        "lineNumber": 112,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing",
+        "lineNumber": 3766,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.logger.log4j.Log4JLogger.isTraceEnabled",
+        "lineNumber": 591,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.addInvalidPartition",
+        "lineNumber": 711,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing",
+        "lineNumber": 3394,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridSpinReadWriteLock.readUnlock",
+        "lineNumber": 168,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing",
+        "lineNumber": 3773,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxRemoteStateImpl.invalidPartition",
+        "lineNumber": 163,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryNodesRing.hasRemoteServerNodes",
+        "lineNumber": 214,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridSpinReadWriteLock.readUnlock",
+        "lineNumber": 164,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing",
+        "lineNumber": 3759,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.startRemoteTx",
+        "lineNumber": 1789,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readMessage",
+        "lineNumber": 1209,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor$SnapshotReducer.collect",
+        "lineNumber": 344,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.diagnostic.pagelocktracker.SharedPageLockTracker.cleanTerminatedThreads",
+        "lineNumber": 259,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxEntry.unmarshal",
+        "lineNumber": 962,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.diagnostic.pagelocktracker.SharedPageLockTracker.lambda$hangThreads$2",
+        "lineNumber": 309,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0",
+        "lineNumber": 2956,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMessage.unmarshalTx",
+        "lineNumber": 445,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor$SnapshotsQueue.reduce",
+        "lineNumber": 283,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.processMessage",
+        "lineNumber": 3229,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$PendingMessages.cleanup",
+        "lineNumber": 2796,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 582,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 570,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readMessage",
+        "lineNumber": 1194,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.processMessage",
+        "lineNumber": 3202,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridListSet.addx",
+        "lineNumber": 183,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 697,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.addMessage",
+        "lineNumber": 3052,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 862,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxEntry.unmarshal",
+        "lineNumber": 981,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0",
+        "lineNumber": 3107,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readCollection",
+        "lineNumber": 1276,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.localPartition0",
+        "lineNumber": 988,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 685,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.timeout.GridTimeoutProcessor.addTimeoutObject",
+        "lineNumber": 107,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 604,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.future.GridFutureAdapter.onDone",
+        "lineNumber": 503,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener.onNodeLeft",
+        "lineNumber": 394,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 751,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 608,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 728,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 669,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.logger.log4j.Log4JLogger.isDebugEnabled",
+        "lineNumber": 596,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener",
+        "lineNumber": 1900,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1497,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1564,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized",
+        "lineNumber": 2482,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCachePartitionExchangeManager.notifyNodeFail",
+        "lineNumber": 391,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.notifyEvictions",
+        "lineNumber": 1954,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.localOwners",
+        "lineNumber": 146,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 598,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 917,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$PendingMessages.hasPendingMessage",
+        "lineNumber": 2779,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager.invokeListener",
+        "lineNumber": 1905,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1560,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$EnsuredMessageHistory.clearClientAddFinished",
+        "lineNumber": 2526,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.candidates",
+        "lineNumber": 1422,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.candidates",
+        "lineNumber": 1420,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 749,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1640,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.validateTopology",
+        "lineNumber": 143,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.CacheOffheapEvictionManager.touch",
+        "lineNumber": 46,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 667,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.localDhtPendingVersions",
+        "lineNumber": 1758,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 732,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1503,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheConcurrentMapImpl.removeEntry",
+        "lineNumber": 286,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1557,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.unlockMultiple",
+        "lineNumber": 2118,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1465,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 634,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 599,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized",
+        "lineNumber": 2458,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedExecutor$StripeConcurrentQueue.take",
+        "lineNumber": 744,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxMap$1$1.advance",
+        "lineNumber": 134,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1517,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 629,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized",
+        "lineNumber": 2485,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.localDhtPendingVersions",
+        "lineNumber": 1760,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 734,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 602,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 1507,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedExecutor$StripeConcurrentQueue.take",
+        "lineNumber": 721,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userCommit",
+        "lineNumber": 731,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedExecutor$StripeConcurrentQueue.take",
+        "lineNumber": 710,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "large-linear": [
+                "350databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.getPageEntrySize",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxEntry.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeInt",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.localOwners",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxPrepareRequest.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.onComplete",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor$SnapshotReducer.collect",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter.mapExplicitLocks",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readShort",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.find",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtCacheEntry.checkReadersLocked",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$GetOne.found",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.candidate",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.writeLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.prepareTx",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.io.GridUnsafeDataInput.fromStream",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.future.GridFutureAdapter.registerWaiter",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedBaseMessage.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.CacheDataRowAdapter.readFullRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.checkOwnerChanged",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.CacheDataRowAdapter.initFromLink",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager.send",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.findDown",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.version.GridCacheVersion.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.version.GridCacheVersion.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager.send",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.impl.PageMemoryNoStoreImpl.readLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIdMessage.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.processNearTxPrepareRequest",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.putInt",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.future.GridCompoundFuture.hasPending",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.treeMeta",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheReturn.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridLeanMap$EntrySet$1.getMapIterator",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.tree.CacheDataTree.compare",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.isEmpty",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.add0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.onEntriesLocked",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.detectPossibleCollidingKeys",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvccManager.addNext",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.putBytes",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.ttlAndExpireTimeExtras",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList.updateDataRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.implicitSingleResult",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.storeValue",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.removeLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.prepare",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxPrepareResponse.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.forceRebalanceKeys",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerSet",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.unswap",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.topologyVersion",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.checkRemoved",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.DataStructure.acquirePage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.internal.GridNioServerWrapper$2.create",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxPrepareResponse.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.internal.ConnectionClientPool.reserveClient",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.onOwnerChanged",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.ownsLockUnsafe",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry$UpdateClosure.checkRowExpired",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.PartitionUpdateCountersMessage.nextCounter",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readIgniteUuid",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvccManager.notifyOwnerChanged",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.remove0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMessage.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.PageIO.deriveIndexPageType",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeShort",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.evictNearEntry",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.impl.PageMemoryNoStoreImpl.releasePage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.markObsolete0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.updateState",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.getDataOffset",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.createRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readInt",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxLocalAdapter.userPrepare",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocal.prepareAsync",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.evictInternal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readObjectArray",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter.addEntry",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.applyTransformClosures",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.checkCallbacks",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtCacheEntry.addDhtLocal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.recheck",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.txUnlock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedBaseMessage.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.getInt",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxPrepareResponse.prepareMarshal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridIntList.contains",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.getBytes",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.reassign",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.prepareNearTx",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.unwindEvicts",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.getSpiContext",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$GetPageHandler.run",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.util.PageHandler.writePage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.checkNeedRebalanceKeys",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.checkThreadChain",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeCollection",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.hasInterceptor",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxPrepareRequest.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.update",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.createPrepareResponse",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheConcurrentMapImpl.putEntryIfObsoleteOrAbsent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.isNearLocallyMapped",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$Search.run0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readUuid",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.lockMultiple",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.PageIO.getBPlusIO",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.putByte",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedExecutor$StripeConcurrentQueue.take",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.releaseWithTag",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTopologyFutureAdapter.validateCache",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.deletedUnlocked",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.collection.IntHashMap.find",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.CacheDataRowAdapter.readIncomplete",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.CacheOffheapEvictionManager.touch",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.prepare0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.onDone",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.nodes0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.findInsertionPoint",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheConcurrentMapImpl.removeEntry",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.sendMessage0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.ownsLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.TxEntryValueHolder.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeLong",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.getByte",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.addLocal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.IgniteCacheDatabaseSharedManager.ensureFreeSpace",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.readPayload",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.state.DirectMessageState.forward",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readArray",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readCollection",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry$UpdateClosure.call",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.remoteOwner",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.invokeDown",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.DataPageIO.writeRowData",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedExecutor$StripeConcurrentQueue.execute",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.nonRollbackPrevious",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.validateTopology",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtLocalPartition.decrementPublicSize",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.readUnlock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.lang.GridFunc.isEmptyOrNulls",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridUnsafe.copyMemory",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.addActiveCache",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedCacheEntry.remoteMvccSnapshot",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager$1.onMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxEntry.unmarshal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v3.DirectByteBufferStreamImplV3.readAffinityTopologyVersion",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v3.DirectByteBufferStreamImplV3.writeAffinityTopologyVersion",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.eventstorage.GridEventStorageManager.isRecordable",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeBoolean",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.diagnostic.pagelocktracker.log.LockLog.reset",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.updateRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvccManager.addFuture",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheContext.isAll",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$DirectNioClientWorker.writeToBuffer",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.CacheDataRowAdapter.doInitFromLink",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.contextDeploymentClassLoaderId",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readByte",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl.pollFuture",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMessage.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.unmarshal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler.processNearTxPrepareRequest0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$DirectNioClientWorker.processWrite0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.map",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.readyLocks",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.readLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.PagesList.takeEmptyPage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtLocalPartition.nextUpdateCounter",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.resolveDiscoCache",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeIgniteUuid",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.tree.CacheDataTree.compareKeys",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.future.GridCompoundFuture.futuresCountNoLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMessage.unmarshalTx",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.writeByte",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.diagnostic.pagelocktracker.log.LockLog.log",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.setBuffer",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryManager.updateListeners",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.localDhtPendingVersions",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture.sendPrepareResponse",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readLong",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.tree.CacheDataTree.getRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxPrepareRequest.finishUnmarshal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridSpinReadWriteLock.readUnlock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "databatch"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.RowStore.addRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.impl.PageMemoryNoStoreImpl.writeLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList$WriteRowHandler.addRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor.getJobMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.IgniteCacheDatabaseSharedManager.ensureFreeSpaceForInsert",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.addFailedNodes",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.localPartition0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.marshaller.optimized.OptimizedClassDescriptor.write",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.lang.GridFunc.concat",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageToClients",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.TxEntryValueHolder.value",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.registerPendingMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.actualFreeSpace",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.TcpDiscoveryImpl.processMsgCacheMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.writeToSocket",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.marshaller.optimized.OptimizedObjectInputStream.readObject0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.PartitionsEvictManager.updateMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils$Batch.result",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.getNode",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.binary.BinaryReaderExImpl.deserialize0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.logger.log4j.Log4JLogger.addConsoleAppenderIfNeeded",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.BPlusIO.setCount",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$Get.notFound",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$6.cacheMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryNodesRing.hasRemoteServerNodes",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.tree.AbstractDataLeafIO.storeByOffset",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.PagesList.putDataPage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.PagesList.initReusedPage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.job.GridJobProcessor.updateJobMetrics0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionMap.put",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.addMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryStatistics.onMessageSent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.ClusterMetricsImpl.getNonHeapMemoryUsed",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList.bucket",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.StripedCompositeReadWriteLock$WriteLock.lock0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$Put.tail",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.affinity.GridAffinityAssignmentCache.awaitTopologyVersion",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.metric.impl.MetricUtils.metricName",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList.writeSinglePage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.tree.AbstractDataLeafIO.visit",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridPartitionStateMap$1$1.next",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxAdapter.addInvalidPartition",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage.hasMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCachePartitionExchangeManager.lastAffinityChangedTopologyVersion",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$MetricsUpdateMessageFilter.addMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.unmarshalZip",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager.unmarshall",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList.insertDataRow",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree$Insert.run0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.reset0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridTcpNioCommunicationClient.sendMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryNodesRing.nextNode",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor.addSnapshot",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.tracing.GridTracingManager.create",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.tostring.GridToStringBuilder.appendVals",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.arrayCopy",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager.onMessageProcessed",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.marshaller.jdk.JdkMarshaller.unmarshal0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.fix",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$SizeBasedBalancer.run",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.PagesList.getPageForPut",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.forName",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.isLocalNodeCoordinator",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.binary.streams.BinaryMemoryAllocator$ThreadLocalAllocator$Chunk.release",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.writeUuid",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor$SnapshotReducer.reduce",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.AbstractFreeList.takePage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.insertItem",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.BPlusTree.getFirstPageId",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.putLong",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.freelist.PagesList.getPageForTake",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage.setMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.addReaderIfNeed",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.MarshallerContextImpl.getClassName",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.unmarshal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.moveItems",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.updatePendingEntries",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage.setCacheMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.tree.io.AbstractDataPageIO.addItem",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.sameMacs",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerGet0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.job.GridJobProcessor.updateJobMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.processMetricsUpdateMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.lang.GridFunc.sumInt",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.tostring.GridToStringBuilder.getClassDescriptor",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridSpinReadWriteLock.tryReadLock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.metric.impl.MetricUtils.ensureAllNamesNotEmpty",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager$GridCommunicationMessageSet.onTimeout",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheTtlManager.expire",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridConnectionBytesVerifyFilter.onMessageReceived",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryAbstractMessage.getFlag",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryNodesRing$2.apply",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoMessage.writeTo",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer.send",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.internal.TcpDiscoveryStatistics.onMessageProcessingFinished",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager.processRegularMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.updateTopologyHistory",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.worker.WorkersRegistry.onIdle",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoMessage.readFrom",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.persistence.diagnostic.pagelocktracker.SharedPageLockTracker.lambda$hangThreads$2",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.future.GridFutureAdapter.get0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.eventstorage.GridEventStorageManager.record0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.internal.InboundConnectionHandler.onMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager.onSend",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.events.DiscoveryCustomEvent.requiresCentralizedAffinityAssignment",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$4.onDiscovery0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$DirectNioClientWorker.processRead",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.ClusterCachesInfo.onDiscoveryEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.tostring.GridToStringBuilder.toString",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener.onMessageReceived",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.version.GridCacheVersionManager$1.onEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.eventstorage.GridEventStorageManager.isUserRecordable",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.getNodeAddresses",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.addEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor.add",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.binary.BinaryContext.descriptorForClass",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.direct.stream.v2.DirectByteBufferStreamImplV2.readMap",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.GridPartitionStateMap.setState",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.lang.GridFunc.isAll",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.timeout.GridTimeoutProcessor.addTimeoutObject",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.prepareNodeAddedMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener.onMessageSent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage$MetricsSet.readExternal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheIoManager.onMessage0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage.hasCacheMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioCodecFilter.onMessageReceived",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.jobmetrics.GridJobMetricsProcessor$SnapshotsQueue.reduce",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.affinity.GridAffinityAssignmentV2.getIds",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.notifyDiscovery",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.CacheAffinitySharedManager.onDiscoveryEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.processMessageFailedNodes",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.arrayList",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.processMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.recordEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.affinity.GridAffinityAssignmentCache.cachedAffinity",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.skipMessage",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.communication.GridIoManager.onMessage0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtLocalPartition.release0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.managers.eventstorage.GridEventStorageManager.notifyListeners",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.ClusterMetricsSnapshot.deserialize",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor.ackReceived",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer$HeadFilter.onSessionWrite",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.ServerImpl.updateMetrics",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.nio.GridNioServer.send0",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.OffheapReadWriteLock.writeUnlock",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage$MetricsSet.writeExternal",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.job.GridJobProcessor$JobDiscoveryListener.onEvent",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.transactions.IgniteTxMap$1$1.advance",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "databatch^2"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.containsObjectArray",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "databatch^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.IgniteUtils.hashCode",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "databatch^2"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMapEntry.checkObsolete",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "databatch^2"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.processors.cache.GridCacheMvcc.candidates",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "databatch^2"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.ignite.internal.util.lang.gridfunc.TransformFilteringIterator.hasNextX",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "databatch * log(databatch)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.ignite.internal.pagemem.PageUtils.getShort",
+        "lineNumber": 0,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "databatch * log(databatch)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    }
+]

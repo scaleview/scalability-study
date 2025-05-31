@@ -1,0 +1,30 @@
+DCFs in CA-4.1.0: 68966
+compute-sync: 768
+compute-app: 2408
+compute-cross: 2624
+unbound-collection: 2689
+unbound-allocation: 966
+unbound-os: 0
+Totally: 9455
+Deduplicated: 7823
+Pattern statistics: {1: 6390, 2: 1242, 3: 183, 4: 8}
+DCFs in HD-3.4.0: 74737
+compute-sync: 5196
+compute-app: 1800
+compute-cross: 11439
+unbound-collection: 2055
+unbound-allocation: 659
+unbound-os: 0
+Totally: 21149
+Deduplicated: 16982
+Pattern statistics: {1: 13513, 2: 2857, 3: 531, 4: 76, 5: 5}
+DCFs in IG-2.16.0: 190059
+compute-sync: 6513
+compute-app: 0
+compute-cross: 2625
+unbound-collection: 3744
+unbound-allocation: 1558
+unbound-os: 0
+Totally: 14440
+Deduplicated: 12467
+Pattern statistics: {1: 10649, 2: 1667, 3: 147, 4: 4}

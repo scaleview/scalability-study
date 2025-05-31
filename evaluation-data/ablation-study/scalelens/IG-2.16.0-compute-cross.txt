@@ -1,0 +1,13 @@
+|                                        dimensionalCodeFragment                                         |    pattern    |
++--------------------------------------------------------------------------------------------------------+---------------+
+| org.apache.ignite.internal.processors.query.h2.opt.GridLuceneIndex.store                               | compute-cross |
+| org.apache.ignite.internal.util.IgniteUtils.writeMap                                                   | compute-cross |
+| org.apache.ignite.internal.util.IgniteUtils.writeUuid                                                  | compute-cross |
+| org.apache.ignite.internal.util.nio.GridNioCodecFilter.onMessageReceived                               | compute-cross |
+| org.apache.ignite.internal.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized | compute-cross |
+| org.apache.ignite.internal.util.nio.GridNioServer$DirectNioClientWorker.processRead                    | compute-cross |
+| org.apache.ignite.internal.util.nio.GridNioServer$DirectNioClientWorker.processWrite0                  | compute-cross |
+| org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing                 | compute-cross |
+| org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.writeToSocket                                      | compute-cross |
+| org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage$MetricsSet.readExternal  | compute-cross |
+| org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage$MetricsSet.writeExternal | compute-cross |

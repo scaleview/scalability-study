@@ -1,0 +1,24 @@
+<anonymous class>.run
+org.apache.ignite.cache.affinity.rendezvous.RendezvousAffinityFunction$LazyLinearSortedContainer$SortIterator.next
+org.apache.ignite.internal.processors.affinity.HistoryAffinityAssignmentImpl.backupPartitions
+org.apache.ignite.internal.processors.affinity.HistoryAffinityAssignmentImpl.primaryPartitions
+org.apache.ignite.internal.processors.affinity.HistoryAffinityAssignmentImpl.primaryPartitionNodes
+org.apache.ignite.internal.processors.affinity.HistoryAffinityAssignmentImpl.nodes
+org.apache.ignite.internal.processors.cache.ExchangeDiscoveryEvents.nodeJoined
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onDone
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.init
+org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.validateTopology
+org.apache.ignite.internal.processors.cluster.BaselineTopology.createBaselineView
+org.apache.ignite.internal.processors.cluster.BaselineTopology.currentBaseline
+org.apache.ignite.spi.discovery.tcp.internal.DiscoveryDataPacket.mergeDataFrom
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onAllServersLeft
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.processFullMessage
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.finishExchangeOnCoordinator
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onAllReceived
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onLeft
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.waitPartitionRelease
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.distributedExchange
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.clientOnlyExchange
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.updateTopologies
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.initTopologies
+org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.ensureClientCachesStarted

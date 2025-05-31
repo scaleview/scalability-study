@@ -1,0 +1,12 @@
+|                                         dimensionalCodeFragment                                          |      pattern       |
++----------------------------------------------------------------------------------------------------------+--------------------+
+| org.apache.ignite.internal.managers.communication.GridIoManager.onMessage0                               | unbound-allocation |
+| org.apache.ignite.internal.managers.tracing.GridTracingManager.create                                    | unbound-allocation |
+| org.apache.ignite.internal.processors.cache.GridCacheMvcc.candidates                                     | unbound-allocation |
+| org.apache.ignite.internal.processors.cache.GridCacheMvccManager.addNext                                 | unbound-allocation |
+| org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtCacheEntry.checkReadersLocked         | unbound-allocation |
+| org.apache.ignite.internal.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.nodes0 | unbound-allocation |
+| org.apache.ignite.internal.processors.cache.transactions.IgniteTxStateImpl.validateTopology              | unbound-allocation |
+| org.apache.ignite.internal.util.IgniteUtils.arrayList                                                    | unbound-allocation |
+| org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.checkFailedNodesList                    | unbound-allocation |
+| org.apache.ignite.spi.discovery.tcp.ServerImpl$RingMessageWorker.sendMessageAcrossRing                   | unbound-allocation |

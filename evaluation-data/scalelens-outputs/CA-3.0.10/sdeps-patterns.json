@@ -1,0 +1,4508 @@
+[
+    {
+        "methodName": "org.apache.cassandra.cache.ConcurrentLinkedHashCache.remove",
+        "lineNumber": 116,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.metadata.CompactionMetadata$CompactionMetadataSerializer.serializedSize",
+        "lineNumber": 82,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cache.ConcurrentLinkedHashCache.put",
+        "lineNumber": 101,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "bursty": [
+                "Burst(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SizeEstimatesRecorder.run",
+        "lineNumber": 76,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.storeKeyspaceInstance",
+        "lineNumber": 254,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.isSystemKeyspace",
+        "lineNumber": 117,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BasePartitions.hasNext",
+        "lineNumber": 87,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "supra-linear": [
+                "0.0837table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.SSTableRewriter.append",
+        "lineNumber": 137,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer.serialize",
+        "lineNumber": 95,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BaseRows.runOnClose",
+        "lineNumber": 84,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.BufferedDataOutputStreamPlus.writeBoolean",
+        "lineNumber": 204,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.storeKeyspaceInstance",
+        "lineNumber": 251,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.Memory.checkBounds",
+        "lineNumber": 339,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.metadata.CompactionMetadata$CompactionMetadataSerializer.deserialize",
+        "lineNumber": 102,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.SSTableRewriter.append",
+        "lineNumber": 129,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ],
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader.getApproximateKeyCount",
+        "lineNumber": 270,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "supra-linear": [
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.SchemaKeyspace.calculateSchemaDigest",
+        "lineNumber": 309,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.metadata.CompactionMetadata$CompactionMetadataSerializer.serialize",
+        "lineNumber": 92,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer.serialize",
+        "lineNumber": 110,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer.serialize",
+        "lineNumber": 111,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.MergeIterator$ManyToOne.replaceAndSink",
+        "lineNumber": 262,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "supra-linear": [
+                "log(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.SelectStatement.process",
+        "lineNumber": 707,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer.serialize",
+        "lineNumber": 118,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.partitions.UnfilteredPartitionIterators$Serializer.serialize",
+        "lineNumber": 295,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ],
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.SSTableRewriter.moveStarts",
+        "lineNumber": 226,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.RowIterators.digest",
+        "lineNumber": 50,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BasePartitions.hasNext",
+        "lineNumber": 92,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.SSTableRewriter$InvalidateKeys.run",
+        "lineNumber": 275,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getKSMetaData",
+        "lineNumber": 334,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.setKeyspaceMetadata",
+        "lineNumber": 413,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getNonLocalStrategyKeyspaces",
+        "lineNumber": 360,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.LeveledManifest.getEstimatedTasks",
+        "lineNumber": 751,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "quasi-linear": [
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore.all",
+        "lineNumber": 1915,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.concurrent.Ref$GlobalState.release",
+        "lineNumber": 313,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.ThreadPoolMetrics.getJmxThreadPools",
+        "lineNumber": 151,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.CompactionMetrics$1.getValue",
+        "lineNumber": 62,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.MergeIterator.close",
+        "lineNumber": 57,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPExecutor.takeWorkPermit",
+        "lineNumber": 155,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "supra-linear": [
+                "log(row)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.ExecutorLocals.set",
+        "lineNumber": 79,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "super-linear": [
+                "node^2",
+                "token^2"
+            ],
+            "supra-linear": [
+                "log(row)",
+                "log(datacenter)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore$2.run",
+        "lineNumber": 298,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getKeyspaceInstance",
+        "lineNumber": 179,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ],
+            "super-linear": [
+                "keyspace^2",
+                "keyspace^3"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getKeyspaces",
+        "lineNumber": 400,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.DynamicEndpointSnitch.updateScores",
+        "lineNumber": 275,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.AbstractLocalAwareExecutorService$FutureTask.run",
+        "lineNumber": 164,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "0.0771table",
+                "log(table)"
+            ],
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Server$ConnectionTracker.send",
+        "lineNumber": 270,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)"
+            ],
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.DynamicEndpointSnitch.updateScores",
+        "lineNumber": 282,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ],
+            "quasi-linear": [
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.run",
+        "lineNumber": 111,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(row)"
+            ],
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.run",
+        "lineNumber": 91,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0632keyspace",
+                "log(keyspace)",
+                "log(row)",
+                "0.0469table"
+            ],
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.selfAssign",
+        "lineNumber": 184,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "keyspace^3",
+                "node^3"
+            ],
+            "large-linear": [
+                "10114keyspace"
+            ],
+            "linear": [
+                "row"
+            ],
+            "supra-linear": [
+                "log(table)"
+            ],
+            "bursty": [
+                "Burst(table)",
+                "Burst(datacenter, token)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.doWaitSpin",
+        "lineNumber": 229,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "keyspace^3",
+                "node^3"
+            ],
+            "large-linear": [
+                "3359keyspace"
+            ],
+            "supra-linear": [
+                "log(row)",
+                "log(table)"
+            ],
+            "bursty": [
+                "Burst(table)",
+                "Burst(datacenter, token)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BasePartitions.hasNext",
+        "lineNumber": 95,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "large-linear": [
+                "166keyspace",
+                "244keyspace",
+                "248keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.EndpointStateSerializer.serializedSize",
+        "lineNumber": 203,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.applyNewStates",
+        "lineNumber": 1178,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.getConnectionPool",
+        "lineNumber": 606,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.AbstractReplicationStrategy.getAddressRanges",
+        "lineNumber": 174,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node"
+            ],
+            "super-linear": [
+                "token^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAck2Serializer.serializedSize",
+        "lineNumber": 82,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.sendGossip",
+        "lineNumber": 639,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAck2Serializer.deserialize",
+        "lineNumber": 70,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.ArrivalWindow.add",
+        "lineNumber": 446,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.notifyFailureDetector",
+        "lineNumber": 911,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.RebufferingInputStream.read",
+        "lineNumber": 82,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ],
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.SortedBiMultiValMap.create",
+        "lineNumber": 60,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node"
+            ],
+            "super-linear": [
+                "node * token",
+                "datacenter * token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.getMaxEndpointStateVersion",
+        "lineNumber": 377,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAckSerializer.deserialize",
+        "lineNumber": 80,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSerializationHelper.serializedSize",
+        "lineNumber": 75,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSerializationHelper.deserialize",
+        "lineNumber": 67,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.makeRandomGossipDigest",
+        "lineNumber": 483,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSynVerbHandler.doSort",
+        "lineNumber": 99,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.EndpointStateSerializer.deserialize",
+        "lineNumber": 188,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSynVerbHandler.doSort",
+        "lineNumber": 109,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.examineGossiper",
+        "lineNumber": 1233,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.applyNewStates",
+        "lineNumber": 1182,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSerializationHelper.serialize",
+        "lineNumber": 59,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.getStateForVersionBiggerThan",
+        "lineNumber": 885,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.getVersion",
+        "lineNumber": 941,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.getConnectionPool",
+        "lineNumber": 602,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAckSerializer.serializedSize",
+        "lineNumber": 93,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestSynVerbHandler.doSort",
+        "lineNumber": 125,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.EndpointStateSerializer.serialize",
+        "lineNumber": 174,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAckVerbHandler.doVerb",
+        "lineNumber": 71,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.getStateForVersionBiggerThan",
+        "lineNumber": 876,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAck2Serializer.serialize",
+        "lineNumber": 57,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.AbstractReplicationStrategy.getAddressRanges",
+        "lineNumber": 177,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node"
+            ],
+            "super-linear": [
+                "token^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.setVersion",
+        "lineNumber": 901,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.GossipDigestAckSerializer.serialize",
+        "lineNumber": 66,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.streaming.StreamManager.registerReceiving",
+        "lineNumber": 151,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(node, token)"
+            ],
+            "linear": [
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ColumnIdentifier.prefixComparison",
+        "lineNumber": 101,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "super-linear": [
+                "node^2"
+            ],
+            "linear": [
+                "row"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoir.rescale",
+        "lineNumber": 277,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(node, token)",
+                "Burst(row)",
+                "Burst(datacenter, token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SizeEstimatesRecorder.recordSizeEstimates",
+        "lineNumber": 97,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "linear": [
+                "keyspace",
+                "token",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cache.InstrumentingCache.get",
+        "lineNumber": 59,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.updateHostId",
+        "lineNumber": 258,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(node, token)",
+                "Burst(datacenter, token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cache.InstrumentingCache.get",
+        "lineNumber": 61,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringComparator.compare",
+        "lineNumber": 135,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(table)"
+            ],
+            "supra-linear": [
+                "log(node * token)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SizeEstimatesRecorder.recordSizeEstimates",
+        "lineNumber": 105,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "linear": [
+                "keyspace",
+                "token",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.streaming.StreamManager$3.run",
+        "lineNumber": 147,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(node, token)"
+            ],
+            "linear": [
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.StreamingMetrics.get",
+        "lineNumber": 50,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "supra-linear": [
+                "log(token)"
+            ],
+            "linear": [
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.PendingRangeCalculatorService$PendingRangeTask.run",
+        "lineNumber": 63,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Rows.collectStats",
+        "lineNumber": 77,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "linear": [
+                "node"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.UnbufferedDataOutputStreamPlus.writeUTF",
+        "lineNumber": 265,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.UnbufferedDataOutputStreamPlus.writeUTF",
+        "lineNumber": 291,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)",
+                "Burst(node, token)",
+                "Burst(datacenter, token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.TypeSizes.encodedUTF8Length",
+        "lineNumber": 48,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node)"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.SimpleStrategy.calculateNaturalEndpoints",
+        "lineNumber": 56,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "node * log(node)"
+            ],
+            "super-linear": [
+                "token^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.cloneOnlyTokenMap",
+        "lineNumber": 622,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "node * log(node)"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.getPrimaryRangesFor",
+        "lineNumber": 726,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "node * log(node)"
+            ],
+            "super-linear": [
+                "node * token",
+                "datacenter * token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.getAllEndpoints",
+        "lineNumber": 955,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "node * log(node)"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessageDeliveryTask.run",
+        "lineNumber": 85,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(node)",
+                "log(datacenter)"
+            ],
+            "super-linear": [
+                "token^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessageDeliveryTask.run",
+        "lineNumber": 58,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(node)",
+                "log(datacenter)"
+            ],
+            "super-linear": [
+                "token^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.calculatePendingRanges",
+        "lineNumber": 854,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(node)"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.getRawVersion",
+        "lineNumber": 959,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(node)",
+                "log(token)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.knowsVersion",
+        "lineNumber": 967,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(node)",
+                "log(token)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore$4.call",
+        "lineNumber": 903,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.takeSnapshot",
+        "lineNumber": 2725,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.CompactionManager$BackgroundCompactionCandidate.run",
+        "lineNumber": 266,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ],
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.takeSnapshot",
+        "lineNumber": 2720,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnIndex$Builder.build",
+        "lineNumber": 111,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)",
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.obs.OffHeapBitSet.serialize",
+        "lineNumber": 115,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.MurmurHash.hash3_x64_128",
+        "lineNumber": 188,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.executeInternalWithoutCondition",
+        "lineNumber": 558,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ResultSet$Codec.encode",
+        "lineNumber": 198,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0643keyspace",
+                "0.0665keyspace",
+                "0.0671table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ResultSet$Codec.encodedSize",
+        "lineNumber": 210,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0643keyspace",
+                "0.0665keyspace",
+                "0.0671table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.SelectStatement.processPartition",
+        "lineNumber": 778,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0695keyspace",
+                "0.0652keyspace",
+                "0.0664table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.SelectStatement.processPartition",
+        "lineNumber": 773,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0643keyspace",
+                "0.0665keyspace",
+                "0.0664table",
+                "0.0655table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ResultSet$Codec.encode",
+        "lineNumber": 202,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0643keyspace",
+                "0.0665keyspace",
+                "0.0671table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ResultSet$Codec.encodedSize",
+        "lineNumber": 212,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0643keyspace",
+                "0.0665keyspace",
+                "0.0671table",
+                "0.0665table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.RestorableMeter.tickIfNecessary",
+        "lineNumber": 82,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.StreamingHistogram$StreamingHistogramSerializer.serialize",
+        "lineNumber": 178,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2129,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2127,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.snapshotExists",
+        "lineNumber": 264,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2119,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.QueryProcessor.makeInternalOptions",
+        "lineNumber": 270,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2113,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore$2.run",
+        "lineNumber": 299,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.thrift.ThriftValidation.validateKeyspace",
+        "lineNumber": 82,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2125,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.getNextBackgroundSSTables",
+        "lineNumber": 95,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.snapshot",
+        "lineNumber": 228,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.CompactionManager.submitBackground",
+        "lineNumber": 171,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoir$EstimatedHistogramReservoirSnapshot.getValue",
+        "lineNumber": 373,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(row)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SizeEstimatesRecorder.run",
+        "lineNumber": 78,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace",
+                "table"
+            ],
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getCFMetaData",
+        "lineNumber": 293,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SerializationHeader.typesOf",
+        "lineNumber": 139,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1.run",
+        "lineNumber": 2121,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Frame$Encoder.encode",
+        "lineNumber": 271,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.concurrent.WaitQueue.cleanUpCancelled",
+        "lineNumber": 161,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoir$EstimatedHistogramReservoirSnapshot.getValue",
+        "lineNumber": 383,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.DynamicEndpointSnitch.updateScores",
+        "lineNumber": 280,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper$GossipTask.run",
+        "lineNumber": 145,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ],
+            "supra-linear": [
+                "log(keyspace)",
+                "log(row)",
+                "0.0090table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.net.MessagingService.addLatency",
+        "lineNumber": 466,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.DynamicEndpointSnitch.updateScores",
+        "lineNumber": 273,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.commitlog.CommitLogSegment.coverInMap",
+        "lineNumber": 432,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.readRegular",
+        "lineNumber": 1633,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cache.ConcurrentLinkedHashCache.get",
+        "lineNumber": 96,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.getKeyspaces",
+        "lineNumber": 4288,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.getValidKeyspace",
+        "lineNumber": 2825,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "keyspace"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.config.Schema.getNonSystemKeyspaces",
+        "lineNumber": 349,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "keyspace * log(keyspace)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.CompactionMetrics.finishCompaction",
+        "lineNumber": 98,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Message$Dispatcher$Flusher.run",
+        "lineNumber": 448,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "supra-linear": [
+                "log(row)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.RowIndexEntry$Serializer.skipPromotedIndex",
+        "lineNumber": 246,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(keyspace)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.FastByteOperations$UnsafeOperations.compareTo",
+        "lineNumber": 350,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(row)"
+            ],
+            "super-linear": [
+                "node^2"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.apply",
+        "lineNumber": 549,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.big.BigTableReader.getPosition",
+        "lineNumber": 199,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(keyspace)",
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BTreeRow$Builder$CellResolver.resolve",
+        "lineNumber": 585,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.SetSerializer.deserializeForNativeProtocol",
+        "lineNumber": 97,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "table",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Cells.reconcile",
+        "lineNumber": 86,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Cells.reconcileComplex",
+        "lineNumber": 211,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredSerializer.writeComplexColumn",
+        "lineNumber": 206,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.CollectionSerializer.pack",
+        "lineNumber": 67,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Cells.reconcile",
+        "lineNumber": 83,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.Sets$Value.fromSerialized",
+        "lineNumber": 148,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.handleStateNormal",
+        "lineNumber": 2012,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.CellPath.dataSize",
+        "lineNumber": 52,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Rows.collectStats",
+        "lineNumber": 92,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.ComplexColumnData.dataSize",
+        "lineNumber": 113,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.TreeBuilder.build",
+        "lineNumber": 110,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.SetSerializer.serializeValues",
+        "lineNumber": 53,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.addBootstrapTokens",
+        "lineNumber": 333,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SystemKeyspace.tokensAsSet",
+        "lineNumber": 733,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.handleStateNormal",
+        "lineNumber": 2006,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Cells.reconcile",
+        "lineNumber": 82,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.addBootstrapTokens",
+        "lineNumber": 339,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredSerializer.sizeOfComplexColumn",
+        "lineNumber": 310,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.updateNormalTokens",
+        "lineNumber": 176,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.ComplexColumnData.unsharedHeapSizeExcludingData",
+        "lineNumber": 122,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.TokenSerializer.deserialize",
+        "lineNumber": 52,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.CollectionSerializer.pack",
+        "lineNumber": 62,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.BiMultiValMap.removeValue",
+        "lineNumber": 127,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.BTree$Builder.resolve",
+        "lineNumber": 1022,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.updateNormalTokens",
+        "lineNumber": 209,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.addBootstrapTokens",
+        "lineNumber": 346,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "node",
+                "datacenter"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serializedSize",
+        "lineNumber": 317,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serializedSize",
+        "lineNumber": 318,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BTreeRow$Builder.addCell",
+        "lineNumber": 662,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.SetSerializer.serializeValues",
+        "lineNumber": 55,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serialize",
+        "lineNumber": 253,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serialize",
+        "lineNumber": 234,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BTreeRow$Builder$CellResolver.resolve",
+        "lineNumber": 563,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.UnbufferedDataOutputStreamPlus.writeUTF",
+        "lineNumber": 268,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serialize",
+        "lineNumber": 238,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.UnbufferedDataOutputStreamPlus.writeUTF",
+        "lineNumber": 315,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.BTree$Builder.sort",
+        "lineNumber": 991,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serialize",
+        "lineNumber": 237,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "token"
+            ],
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.util.UnbufferedDataOutputStreamPlus.writeUTF",
+        "lineNumber": 322,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "node^2"
+            ],
+            "linear": [
+                "token"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.vint.VIntCoding.encodeVInt",
+        "lineNumber": 131,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node, token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.big.BigTableReader.getPosition",
+        "lineNumber": 140,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node, token)",
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Rows.copy",
+        "lineNumber": 44,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node, token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.streaming.StreamManager.getReceivingStream",
+        "lineNumber": 156,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(node, token)"
+            ],
+            "linear": [
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.TimeUUIDType.compareCustom",
+        "lineNumber": 65,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.validate",
+        "lineNumber": 228,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.checkAccess",
+        "lineNumber": 211,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.concurrent.OpOrder$Group.unlink",
+        "lineNumber": 257,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.validate",
+        "lineNumber": 210,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.concurrent.OpOrder$Group.unlink",
+        "lineNumber": 272,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.batchlog.BatchlogManager.store",
+        "lineNumber": 132,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.TimeUUIDType.compareCustom",
+        "lineNumber": 67,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Mutation$MutationSerializer.serialize",
+        "lineNumber": 306,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.apply",
+        "lineNumber": 442,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.gms.Gossiper.addLocalApplicationStates",
+        "lineNumber": 1449,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.partitions.PartitionUpdate.dataSize",
+        "lineNumber": 350,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.verifyBatchSize",
+        "lineNumber": 269,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.mutateAtomically",
+        "lineNumber": 880,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.syncWriteBatchedMutations",
+        "lineNumber": 1010,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.TokenMetadata.firstTokenIndex",
+        "lineNumber": 998,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.Rows.copy",
+        "lineNumber": 54,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.LatencyMetrics.addNano",
+        "lineNumber": 119,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.locator.AbstractReplicationStrategy.getCachedEndpoints",
+        "lineNumber": 94,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.apply",
+        "lineNumber": 441,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serialize",
+        "lineNumber": 266,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.TimeUUIDType.compareCustom",
+        "lineNumber": 56,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy$RangeCommandIterator.close",
+        "lineNumber": 2142,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.TimeUUIDType.compareCustom",
+        "lineNumber": 51,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ],
+            "quasi-linear": [
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.apply",
+        "lineNumber": 551,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BufferCell$Serializer.serializedSize",
+        "lineNumber": 331,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.ComplexColumnData.lambda$filter$0",
+        "lineNumber": 156,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.triggers.TriggerExecutor.execute",
+        "lineNumber": 111,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.messages.BatchMessage.execute",
+        "lineNumber": 203,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.validate",
+        "lineNumber": 159,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.service.AbstractWriteResponseHandler.assureSufficientLiveNodes",
+        "lineNumber": 146,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Mutation$MutationSerializer.serialize",
+        "lineNumber": 307,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.syncWriteBatchedMutations",
+        "lineNumber": 1015,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Mutation$MutationSerializer.serialize",
+        "lineNumber": 294,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.CBUtil.decodeString",
+        "lineNumber": 116,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.BTreeRow.minDeletionTime",
+        "lineNumber": 137,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.sendToHintedEndpoints",
+        "lineNumber": 1196,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.messages.BatchMessage.execute",
+        "lineNumber": 177,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.UpdatesCollector.validateIndexedColumns",
+        "lineNumber": 88,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.messages.BatchMessage.execute",
+        "lineNumber": 192,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.messages.BatchMessage$1.decode",
+        "lineNumber": 52,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.getMutations",
+        "lineNumber": 224,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.syncWriteBatchedMutations",
+        "lineNumber": 1008,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.checkAccess",
+        "lineNumber": 136,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.UpdatesCollector.validateIndexedColumns",
+        "lineNumber": 89,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.partitions.PartitionUpdate.dataSize",
+        "lineNumber": 353,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.addUpdates",
+        "lineNumber": 672,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.NodeBuilder.ensureRoom",
+        "lineNumber": 367,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.addUpdates",
+        "lineNumber": 659,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.BatchStatement.verifyBatchSize",
+        "lineNumber": 275,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.restrictions.StatementRestrictions.getPartitionKeyBoundsForTokenRestrictions",
+        "lineNumber": 696,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.ModificationStatement.validate",
+        "lineNumber": 227,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.assign",
+        "lineNumber": 153,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.PartitionColumns$Builder.addAll",
+        "lineNumber": 181,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageProxy.sendToHintedEndpoints",
+        "lineNumber": 1246,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.concurrent.SEPWorker.assign",
+        "lineNumber": 166,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Message$Dispatcher.exceptionCaught",
+        "lineNumber": 557,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)",
+                "Burst(table)"
+            ],
+            "supra-linear": [
+                "log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore.scheduleFlush",
+        "lineNumber": 288,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Message$Dispatcher$Flusher.run",
+        "lineNumber": 451,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ],
+            "supra-linear": [
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.createSSTableAndLengthPairs",
+        "lineNumber": 228,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.NodeBuilder.buildFromRange",
+        "lineNumber": 400,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.createSSTableAndLengthPairs",
+        "lineNumber": 229,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BasePartitions.runOnClose",
+        "lineNumber": 66,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ],
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.lifecycle.Helpers.identityMap",
+        "lineNumber": 169,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.Descriptor.appendFileName",
+        "lineNumber": 149,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(row)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.UUIDGen.createTimeUUIDBytes",
+        "lineNumber": 261,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "row"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.UUIDGen.createTimeUUIDBytes",
+        "lineNumber": 264,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "row"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.SinglePartitionReadCommand$Group.executeInternal",
+        "lineNumber": 986,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CompactionParams.classFromName",
+        "lineNumber": 235,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CompactionParams.equals",
+        "lineNumber": 296,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.statements.SelectStatement.getSliceCommands",
+        "lineNumber": 478,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CompactionParams.create",
+        "lineNumber": 83,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.TableParams$Builder.extensions",
+        "lineNumber": 376,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.skipNext",
+        "lineNumber": 512,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.CFMetaData.create",
+        "lineNumber": 337,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.config.ColumnDefinition.comparisonOrder",
+        "lineNumber": 93,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CachingParams.fromMap",
+        "lineNumber": 99,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.prepare",
+        "lineNumber": 426,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.compareNextTo",
+        "lineNumber": 443,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.skipNext",
+        "lineNumber": 516,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CompressionParams.copyOptions",
+        "lineNumber": 278,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.prepare",
+        "lineNumber": 425,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.cql3.ColumnIdentifier.getInterned",
+        "lineNumber": 150,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.serializers.MapSerializer.deserializeForNativeProtocol",
+        "lineNumber": 112,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.KeyspaceMetadata.existingIndexNames",
+        "lineNumber": 113,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.Tables.diff",
+        "lineNumber": 122,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.SetType.getInstance",
+        "lineNumber": 53,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CompressionParams.validate",
+        "lineNumber": 429,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CachingParams.fromMap",
+        "lineNumber": 94,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.marshal.MapType.getInstance",
+        "lineNumber": 57,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.SchemaKeyspace.fetchTables",
+        "lineNumber": 927,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.schema.CQLTypeParser.parse",
+        "lineNumber": 45,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ClusteringPrefix$Deserializer.prepare",
+        "lineNumber": 424,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.transport.Message$Dispatcher$Flusher.run",
+        "lineNumber": 461,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(table)"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.EstimatedHistogram.percentile",
+        "lineNumber": 205,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "0.0523table",
+                "0.0456table",
+                "0.0083table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.CompactionMetrics$1.getValue",
+        "lineNumber": 64,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.StatusLogger.log",
+        "lineNumber": 104,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredSerializer.serialize",
+        "lineNumber": 182,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "table^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.UnfilteredSerializer.serialize",
+        "lineNumber": 192,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "super-linear": [
+                "table^2"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-cross",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.rows.AbstractRow.digest",
+        "lineNumber": 66,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "quasi-linear": [
+                "table * log(table)"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Directories.snapshotExists",
+        "lineNumber": 826,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore.snapshotWithoutFlush",
+        "lineNumber": 1618,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.transform.BaseRows.hasNext",
+        "lineNumber": 143,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore.snapshotWithoutFlush",
+        "lineNumber": 1623,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnFamilyStore.forceFlush",
+        "lineNumber": 866,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app",
+            "compute-sync"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.ColumnIndex$Builder.add",
+        "lineNumber": 144,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.io.sstable.format.SSTableReader.firstKeyBeyond",
+        "lineNumber": 1545,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "bursty": [
+                "Burst(table)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.service.StorageService.forceKeyspaceCompaction",
+        "lineNumber": 2687,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "compute-cross"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.db.Keyspace.getValidColumnFamilies",
+        "lineNumber": 611,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "linear": [
+                "table"
+            ]
+        },
+        "antiPatterns": [
+            "unbound-allocation",
+            "unbound-collection"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.metrics.StreamingMetrics.get",
+        "lineNumber": 46,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "linear": [
+                "datacenter"
+            ]
+        },
+        "antiPatterns": []
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.NodeBuilder.update",
+        "lineNumber": 150,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(datacenter * token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.TreeBuilder.update",
+        "lineNumber": 64,
+        "dependencyType": "Loop",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(datacenter * token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    },
+    {
+        "methodName": "org.apache.cassandra.utils.btree.NodeBuilder.update",
+        "lineNumber": 127,
+        "dependencyType": "Cross",
+        "dimensionDescriptors": {
+            "supra-linear": [
+                "log(datacenter * token)"
+            ]
+        },
+        "antiPatterns": [
+            "compute-app"
+        ]
+    }
+]
